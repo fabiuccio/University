@@ -1,0 +1,674 @@
+import java_cup.runtime.*;
+import java.io.*;
+import java.util.HashMap;
+import java.util.Vector;
+
+init with {:		
+	//poniamo qui comportamenti da eseguire a priori dall'evoluzione del programma
+    symbol_table = new HashMap();
+:};
+
+parser code {:
+    public static int trovato_fatto  = 0;
+    public static int trovati_errori = 0;
+    public HashMap symbol_table;
+    public static BackBone bz;
+    public static String socDoc;
+	
+    public static void main(String argv[]){
+        try {
+            bz = new BackBone(); //Creazione di comodo della struttura senza package
+            socDoc = new String();
+
+            /* Istanzio lo scanner aprendo il file di ingresso argv[0] */
+            Lexer l = new Lexer(new FileReader(argv[0]));
+            /* Istanzio il parser */
+            parser p = new parser(l);
+            /* Avvio il parser */
+            Object result = p.parse().value;      
+            } catch (NullPointerException e){
+                    e.printStackTrace();
+                    System.err.println("Errore in grammatica");
+            } catch (FileNotFoundException e){
+                    System.err.println("Errore: non riesco ad aprire il file " + argv[0]);
+            } catch (Exception e){
+                    e.printStackTrace();
+            }
+        }
+
+        public void syntax_error(Symbol simbolo_attuale) {
+            StringBuffer m = new StringBuffer("Errore");
+
+            if (simbolo_attuale.left != -1) {                
+                m.append(" in linea " + (simbolo_attuale.left+1));   
+                m.append(", colonna " + (simbolo_attuale.right+1));
+            }
+            m.append(", simbolo: " + (simbolo_attuale));
+            m.append(" : errore di sintassi...");
+
+            parser.bz.addErrorLog(BackBone.SYNTAX, m.toString());
+            parser.bz.toFile(); //Viene scritto di volta in volta ad ogni errore trovato...
+        }
+ 
+
+        public void report_error(String message, Object info) {
+            StringBuffer m = new StringBuffer("Errore");
+            m.append(" : " + message);
+            System.err.println(m);
+        }
+
+        public void report_fatal_error(String message, Object info) {
+            report_error(message, info);
+            System.exit(1);
+        }
+
+:};
+
+
+terminal String GRAFFAPERTA, GRAFFACHIUSA, QUADRAPERTA, QUADRACHIUSA, OR, NUMERO;
+terminal String PT, VIR, ATTRIBUZIONE;
+terminal String KEYWORD, TYPE, MY_TYPE, ATOMO, PTVIR, PLAIN_TEXT;
+non terminal Vector blocco;
+non terminal Vector expr, simple_expr, composed_expr, complex_expr;
+non terminal Vector lista_atomo,lista_expr,lista_blocco, macro;
+non terminal String agent_lang, root;
+non terminal String keyword;
+non terminal String atomo;
+
+
+start with agent_lang;
+
+agent_lang ::= root {:
+    System.out.println("[DEBUG] Creazione del codice della società di agenti...");
+    parser.bz.toFile();	
+:};
+
+root ::= blocco:a {:
+    System.out.println("[DEBUG] Trovato un root!");
+
+    if(((Class)a.get(0)).getType()==Class.SOCIETY){
+        if(a.size()<2){
+                parser.bz.addErrorLog(BackBone.SEMANTIC, "Non è possibile avere una società deserta.");
+        }else{
+                Vector errorLog = parser.bz.getErrorLog(); //Preserva il log di errore
+                parser.bz=new BackBone(((Class)a.get(0)).getName());
+                parser.bz.setErrorLog(errorLog); //Ripristina il log di errore
+                
+        }
+		        
+    }
+    else{
+        parser.bz.addErrorLog(BackBone.SEMANTIC, "Il ROOT può essere composto soltanto da una società.");
+    }
+
+    for (int i = 1; i < a.size(); i++){ //Per ogni blocco[] escluso il primo (header)
+        Vector temp2 = (Vector) a.get(i);
+        Class header2 = ((Class)temp2.get(0)); 
+        if(header2.getType()==Class.AGENT){
+	        System.out.println("[DEBUG] Generazione di un file di tipo Agent.java");
+	        header2.addDocumentation(parser.socDoc);
+	        parser.bz.addClass(header2);
+	
+	        for (int insideAgent=1; insideAgent < temp2.size();insideAgent++){
+	            Vector temp3 = (Vector) temp2.get(insideAgent);
+	            Class header3 = ((Class)temp3.get(0));  
+	
+	            if (header3.getType()==Class.ROLE){
+	              		System.out.println("[DEBUG] Aggiunto un ruolo.java!!!");
+	                  	parser.bz.addClass(header3);
+	            }
+	        }
+	        
+    	}
+	    else if(header2.getType()==Class.COMMUNICATION){
+	                  System.out.println("[DEBUG] Generazione di un file di tipo Communication.java!!!");
+	                  parser.bz.addClass(header2);
+	    }	 
+	    else if(header2.getType()==Class.SOCIETY){
+	        parser.bz.addErrorLog(BackBone.SEMANTIC, "L'esistenza di sub-società annidate non è permessa (ancora).");
+	    }
+	    else {
+          	parser.bz.addErrorLog(BackBone.SEMANTIC, "????Nessun agente per la società descritta????"+((Class)temp2.get(0)).getType());
+    	}
+	}
+:};
+
+lista_blocco ::= lista_blocco:lb blocco:b {:
+    System.out.println("[DEBUG] Ho trovato una LISTA_BLOCCO found, con la dimensione: "+lb.size());
+    lb.add(b);
+    RESULT=lb;
+:} 
+
+| blocco:b{:
+    RESULT = new Vector();
+    RESULT.add(b);
+:};
+
+blocco ::= expr:a GRAFFAPERTA lista_expr:le lista_blocco:lb GRAFFACHIUSA {:
+    if(((String)a.get(0)).equals("Agent")){
+        Class agent = new Class((String)a.get(1));
+        agent.setType(Class.AGENT);
+        agent.setExtends("Agent", "jade.core.Agent");
+        agent.addImport("jade.core.AID");
+        Method m = new Method("setup");
+        m.setVisibility(Method.PROTECTED);
+        agent.addMethod(m);
+        for(int i=0;i<le.size(); i++){
+                Vector temp = (Vector) le.get(i);
+                String typeExpr =(String) temp.get(0);
+                if(typeExpr.equals("attrib")){
+                        agent.addAttribute(new Attribute((String) temp.get(1), (String) temp.get(2)));
+                }
+                if(typeExpr.equals("Documentation")){
+	                agent.addDocumentation(((String) temp.get(1)).substring(1));
+	            }
+        }
+        for(int j=0; j<lb.size(); j++){
+        Vector temp = new Vector();
+        temp=(Vector)lb.get(j);
+                if(((Class)temp.get(0)).getType()==Class.ROLE){
+                        m.addBody("addBehaviour(new "+((Class)temp.get(0)).getName()+"(this));");
+                }
+        }
+        RESULT = new Vector();		
+        RESULT.add(agent);
+        RESULT.addAll(lb);
+    }
+    else if(((String)a.get(0)).equals("Communication")){
+    	String stringProtocol="", stringOntology="", stringReceiver="", stringContent="", stringId="";
+    	for (int i = 0; i < le.size();i++){
+			Vector v = ((Vector)le.get(i));
+			if (((String)v.get(0)).equals("id")) stringId = "\""+(String)v.get(1)+"\"";
+			if (((String)v.get(0)).equals("protocol")) stringProtocol = (String)v.get(1);
+			if (((String)v.get(0)).equals("ontology")) stringOntology = (String)v.get(1);
+			if (((String)v.get(0)).equals("receiver")) stringReceiver = (String)v.get(1);
+			if (((String)v.get(0)).equals("content")) stringContent = (String)v.get(1);
+
+	    }    
+        Class communication = new Class((String)a.get(1));
+        communication.setType(Class.COMMUNICATION);
+        communication.addImport("jade.lang.acl.MessageTemplate");
+        communication.addImport("jade.lang.acl.ACLMessage");
+        communication.addImport("jade.content.lang.Codec");
+        communication.addImport("jade.content.onto.Ontology");
+        Attribute id = new Attribute("String","id");
+        if (!stringId.equals("")) id.setInit(stringId);
+        else {
+        	parser.bz.addErrorLog(BackBone.SEMANTIC, "Impossibile definire una comunicazione senza identificatore.");
+        }
+        Attribute receiver = new Attribute("String","receiver");
+        receiver.setInit("\"\"");
+        Attribute protocol = new Attribute("int","protocol");
+        protocol.setInit("0");
+        Attribute ontology = new Attribute("String","ontology");
+        ontology.setInit("\"\"");
+        Attribute content = new Attribute("String","content");
+        content.setInit("\"\"");
+        communication.addAttribute(id);
+        communication.addAttribute(receiver);
+        communication.addAttribute(protocol);
+        communication.addAttribute(ontology);
+        communication.addAttribute(content);
+        Method m1 = new Method((String)a.get(1));
+        m1.setReturnType("");
+        communication.addMethod(m1);
+        Method m2 = new Method((String)a.get(1));
+        m2.setReturnType("");
+        String[] types = new String[]{"int","String","int","String","String"};
+        String[] arguments = new String[]{"id","receiver","protocol","ontology","content"};
+        m2.addArgument(types,arguments);
+        m2.setBody("setId(id);\nsetReceiver(receiver);\nsetProtocol(protocol);\nsetOntology(ontology);\nsetContent(content);");
+        communication.addMethod(m2);
+        Method setId = new Method("setId");
+        setId.addArgument("int","id");
+        setId.setBody("this.id=id;");
+        communication.addMethod(setId);
+        Method setReceiver = new Method("setReceiver");
+        setReceiver.addArgument("String","receiver");
+        setReceiver.setBody("this.receiver=receiver;");
+        communication.addMethod(setReceiver);
+        Method setProtocol = new Method("setProtocol");
+        setProtocol.addArgument("int","protocol");
+        setProtocol.setBody("this.protocol=protocol;");
+        communication.addMethod(setProtocol);
+        Method setOntology = new Method("setOntology");
+        setOntology.addArgument("String","ontology");
+        setOntology.setBody("this.ontology=ontology;");
+        communication.addMethod(setOntology);
+        Method setContent = new Method("setContent");
+        setContent.addArgument("String","content");
+        setContent.setBody("this.content=content;");
+        communication.addMethod(setContent);
+        Method getId = new Method("getId");
+        getId.setReturnType("int");
+        getId.setBody("return id;");
+        communication.addMethod(getId);
+        Method getReceiver = new Method("getReceiver");
+        getReceiver.setReturnType("String");
+        getReceiver.setBody("return receiver;");
+        communication.addMethod(getReceiver);
+        Method getProtocol = new Method("getProtocol");
+        getProtocol.setReturnType("int");
+        getProtocol.setBody("return protocol;");
+        communication.addMethod(getProtocol);
+        Method getOntology = new Method("getOntology");
+        getOntology.setReturnType("String");
+        getOntology.setBody("return ontology;");
+        communication.addMethod(getOntology);
+        Method getContent = new Method("getContent");
+        getContent.setReturnType("String");
+        getContent.setBody("return content;");
+        communication.addMethod(getContent);
+        RESULT = new Vector();
+        RESULT.add(communication);
+    }
+  else if(((String)a.get(0)).equals("Role")){
+        Class c = new Class((String)a.get(1));
+        Vector pippo = new Vector();
+        c.addImport("jade.core.*");
+        c.setType(Class.ROLE);
+        c.setExtends("OneShotBehaviour", "jade.core.behaviours.*");
+        Method m = new Method("action");
+        String bodyM="";
+        Method costruttore = new Method((String)a.get(1));
+        costruttore.setReturnType("");
+        costruttore.setVisibility(Method.PUBLIC);
+		costruttore.setBody("super(aref);\n");
+		costruttore.addArgument("Agent", "aref");
+        m.setVisibility(Method.PROTECTED);
+        String bodyString = "";        
+        
+        for(int i=0;i<le.size(); i++){
+            Vector temp = (Vector) le.get(i);
+            String typeExpr =(String) temp.get(0);
+            if(typeExpr.equals("attrib")){
+                    c.addAttribute(new Attribute((String) temp.get(1), (String) temp.get(2)));
+                    
+            }
+            System.out.println(temp.size());
+            if(typeExpr.equals("task")){
+                if(temp.size()==4){
+                    String t1;
+                    t1=(String)temp.get(3);
+                    bodyM+="myAgent.addBehaviour(new "+((String)temp.get(2))+"(myAgent, "+t1+"));\n";
+                    bodyString=bodyString+"class "+((String)temp.get(2))+" extends CyclicBehaviour {\n";
+                    bodyString=bodyString+"public "+((String)temp.get(2))+"(Agent myAgent, Object "+t1+"){\n";
+                    bodyString=bodyString+"super(aref);\n";
+                    bodyString=bodyString+"}";
+                    bodyString=bodyString+"public void action(){\n";
+                    bodyString=bodyString+"//Add code here....\n";
+                    bodyString=bodyString+"}\n}";
+                    pippo.add(bodyString);
+                }
+                else if(temp.size()==5){
+                    String t1;
+                    String t2;
+                    t1=(String)temp.get(3);
+                    t2=(String)temp.get(4);
+                    bodyM+="myAgent.addBehaviour(new "+((String)temp.get(2))+"(myAgent, "+t1+", "+t2+"));\n";
+                    bodyString=bodyString+"class "+((String)temp.get(2))+" extends CyclicBehaviour {\n";
+                    bodyString=bodyString+"public "+((String)temp.get(2))+"(Agent myAgent, Object "+t1+", Object "+t2+"){\n";
+                    bodyString=bodyString+"super(aref);\n";
+                    bodyString=bodyString+"}";
+                    bodyString=bodyString+"public void action(){\n";
+                    bodyString=bodyString+"//Add code here....\n";
+                    bodyString=bodyString+"}\n}";
+                    pippo.add(bodyString);
+                }
+            }
+        }
+        m.setBody(bodyM);
+        c.addMethod(costruttore);
+        c.addMethod(m);
+        c.addNestedClass(bodyString);
+        RESULT = new Vector();
+        RESULT.add(c);
+    }
+    else if(((String)a.get(0)).equals("Society")){
+        //NON DOVREBBE MAI FINIRE QUI. NON E' STATO ANCORA PREVISTA L'ESISTENZA DI SUB-SOCIETA'  
+        Class c = new Class((String)a.get(1));
+        c.setType(Class.SOCIETY);
+        for(int i=0;i<le.size(); i++){
+            Vector temp = (Vector) le.get(i);
+            String typeExpr =(String) temp.get(0);
+            if(typeExpr.equals("Documentation")){
+	                parser.socDoc="\n Documentazione relativa alla societa' e non al singolo agente: "+((String) temp.get(1)).substring(1)+"\n";
+            }
+        }
+        RESULT = new Vector();
+        RESULT.add(c);
+        RESULT.addAll(lb);
+    }
+:}
+  
+  |
+  
+expr:a GRAFFAPERTA lista_expr:le GRAFFACHIUSA {:
+    if(((String)a.get(0)).equals("Agent")){
+        Class agent = new Class((String)a.get(1));
+        agent.setType(Class.AGENT);
+        agent.setExtends("Agent", "jade.core.Agent");
+        agent.addImport("jade.core.AID");
+        Method m = new Method("setup");
+        m.setVisibility(Method.PROTECTED);
+        agent.addMethod(m);
+        for(int i=0;i<le.size(); i++){
+            Vector temp = (Vector) le.get(i);
+            String typeExpr =(String) temp.get(0);
+            if(typeExpr.equals("attrib")){
+                agent.addAttribute(new Attribute((String) temp.get(1), (String) temp.get(2)));
+            }
+            if(typeExpr.equals("Documentation")){
+                agent.addDocumentation((String) temp.get(1));
+            }
+        }
+
+        RESULT = new Vector();		
+        RESULT.add(agent);
+    }
+    else if(((String)a.get(0)).equals("Communication")){
+		String stringProtocol="", stringOntology="", stringReceiver="", stringContent="", stringId="";
+    	for (int i = 0; i < le.size();i++){
+			Vector v = ((Vector)le.get(i));
+			if (((String)v.get(0)).equals("id")) stringId = "\""+(String)v.get(1)+"\"";
+			if (((String)v.get(0)).equals("protocol")) stringProtocol = (String)v.get(1);
+			if (((String)v.get(0)).equals("ontology")) stringOntology = (String)v.get(1);
+			if (((String)v.get(0)).equals("receiver")) stringReceiver = (String)v.get(1);
+			if (((String)v.get(0)).equals("content")) stringContent = (String)v.get(1);
+			
+	    }    
+        Class communication = new Class((String)a.get(1));
+        communication.setType(Class.COMMUNICATION);
+        communication.addImport("jade.lang.acl.MessageTemplate");
+        communication.addImport("jade.lang.acl.ACLMessage");
+        communication.addImport("jade.content.lang.Codec");
+        communication.addImport("jade.content.onto.Ontology");
+        Attribute id = new Attribute("String","id");
+        if (!stringId.equals("")) id.setInit(stringId);
+        else {
+        	parser.bz.addErrorLog(BackBone.SEMANTIC, "Impossibile definire una comunicazione senza identificatore.");
+        }
+        Attribute receiver = new Attribute("String","receiver");
+        receiver.setInit("\"\"");
+        Attribute protocol = new Attribute("int","protocol");
+        protocol.setInit("0");
+        Attribute ontology = new Attribute("String","ontology");
+        ontology.setInit("\"\"");
+        Attribute content = new Attribute("String","content");
+        content.setInit("\"\"");
+        communication.addAttribute(id);
+        communication.addAttribute(receiver);
+        communication.addAttribute(protocol);
+        communication.addAttribute(ontology);
+        communication.addAttribute(content);
+        Method m1 = new Method((String)a.get(1));
+        m1.setReturnType("");
+        communication.addMethod(m1);
+        Method m2 = new Method((String)a.get(1));
+        m2.setReturnType("");
+        String[] types = new String[]{"int","String","int","String","String"};
+        String[] arguments = new String[]{"id","receiver","protocol","ontology","content"};
+        m2.addArgument(types,arguments);
+        m2.setBody("setId(id);\nsetReceiver(receiver);\nsetProtocol(protocol);\nsetOntology(ontology);\nsetContent(content);");
+        communication.addMethod(m2);
+        Method setId = new Method("setId");
+        setId.addArgument("int","id");
+        setId.setBody("this.id=id;");
+        communication.addMethod(setId);
+        Method setReceiver = new Method("setReceiver");
+        setReceiver.addArgument("String","receiver");
+        setReceiver.setBody("this.receiver=receiver;");
+        communication.addMethod(setReceiver);
+        Method setProtocol = new Method("setProtocol");
+        setProtocol.addArgument("int","protocol");
+        setProtocol.setBody("this.protocol=protocol;");
+        communication.addMethod(setProtocol);
+        Method setOntology = new Method("setOntology");
+        setOntology.addArgument("String","ontology");
+        setOntology.setBody("this.ontology=ontology;");
+        communication.addMethod(setOntology);
+        Method setContent = new Method("setContent");
+        setContent.addArgument("String","content");
+        setContent.setBody("this.content=content;");
+        communication.addMethod(setContent);
+        Method getId = new Method("getId");
+        getId.setReturnType("int");
+        getId.setBody("return id;");
+        communication.addMethod(getId);
+        Method getReceiver = new Method("getReceiver");
+        getReceiver.setReturnType("String");
+        getReceiver.setBody("return receiver;");
+        communication.addMethod(getReceiver);
+        Method getProtocol = new Method("getProtocol");
+        getProtocol.setReturnType("int");
+        getProtocol.setBody("return protocol;");
+        communication.addMethod(getProtocol);
+        Method getOntology = new Method("getOntology");
+        getOntology.setReturnType("String");
+        getOntology.setBody("return ontology;");
+        communication.addMethod(getOntology);
+        Method getContent = new Method("getContent");
+        getContent.setReturnType("String");
+        getContent.setBody("return content;");
+        communication.addMethod(getContent);
+        RESULT = new Vector();
+        RESULT.add(communication);
+    }
+
+    else if(((String)a.get(0)).equals("Role")){
+        Class c = new Class((String)a.get(1));
+        Vector pippo = new Vector();
+        c.addImport("jade.core.*");
+        c.setType(Class.ROLE);
+        c.setExtends("OneShotBehaviour", "jade.core.behaviours.*");
+        Method m = new Method("action");
+        String bodyM="";
+        Method costruttore = new Method((String)a.get(1));
+        costruttore.setReturnType("");
+        costruttore.setVisibility(Method.PUBLIC);
+		costruttore.setBody("super(aref);\n");
+		costruttore.addArgument("Agent", "aref");
+        m.setVisibility(Method.PROTECTED);
+        String bodyString = "";        
+        
+        for(int i=0;i<le.size(); i++){
+            Vector temp = (Vector) le.get(i);
+            String typeExpr =(String) temp.get(0);
+            if(typeExpr.equals("attrib")){
+                    c.addAttribute(new Attribute((String) temp.get(1), (String) temp.get(2)));
+                    
+            }
+            System.out.println(temp.size());
+            if(typeExpr.equals("task")){
+                if(temp.size()==4){
+                    String t1;
+                    t1=(String)temp.get(3);
+                    bodyM+="myAgent.addBehaviour(new "+((String)temp.get(2))+"(myAgent, "+t1+"));\n";
+                    bodyString=bodyString+"class "+((String)temp.get(2))+" extends CyclicBehaviour {\n";
+                    bodyString=bodyString+"public "+((String)temp.get(2))+"(Agent myAgent, Object "+t1+"){\n";
+                    bodyString=bodyString+"super(aref);\n";
+                    bodyString=bodyString+"}";
+                    bodyString=bodyString+"public void action(){\n";
+                    bodyString=bodyString+"//Add code here....\n";
+                    bodyString=bodyString+"}\n}\n\n";
+                    pippo.add(bodyString);
+                }
+                else if(temp.size()==5){
+                    String t1;
+                    String t2;
+                    t1=(String)temp.get(3);
+                    t2=(String)temp.get(4);
+                    bodyM+="myAgent.addBehaviour(new "+((String)temp.get(2))+"(myAgent, "+t1+", "+t2+"));\n";
+                    bodyString=bodyString+"class "+((String)temp.get(2))+" extends CyclicBehaviour {\n";
+                    bodyString=bodyString+"public "+((String)temp.get(2))+"(Agent myAgent, Object "+t1+", Object "+t2+"){\n";
+                    bodyString=bodyString+"super(aref);\n";
+                    bodyString=bodyString+"}";
+                    bodyString=bodyString+"public void action(){\n";
+                    bodyString=bodyString+"//Add code here....\n";
+                    bodyString=bodyString+"}\n}\n\n";
+                    pippo.add(bodyString);
+                }
+            }
+        }
+        m.setBody(bodyM);
+        c.addMethod(costruttore);
+        c.addMethod(m);
+        c.addNestedClass(bodyString);
+        RESULT = new Vector();
+        RESULT.add(c);
+    }
+    else if(((String)a.get(0)).equals("Society")){
+        //NON DOVREBBE MAI FINIRE QUI. NON E' STATO ANCORA PREVISTA L'ESISTENZA DI SUB-SOCIETA'  
+        Class c = new Class((String)a.get(1));
+        c.setType(Class.SOCIETY);
+        for(int i=0;i<le.size(); i++){
+            Vector temp = (Vector) le.get(i);
+            String typeExpr =(String) temp.get(0);
+            if(typeExpr.equals("Documentation")){
+	                parser.socDoc="\n Documentazione relativa alla societa' e non al singolo agente: "+((String) temp.get(1)).substring(1)+"\n";
+            }
+        }
+        RESULT = new Vector();
+        RESULT.add(c);
+    }
+:}
+//AGGIUNTO PER GESTIRE LA CONDIZIONE DI ERRORE NELL'ESPRESSIONE!
+//Questo caso è ininfluente nel parsing!
+    |
+error GRAFFAPERTA lista_expr lista_blocco GRAFFACHIUSA {:
+    parser.report_error(" syntax error in expression\n",null);
+    parser.bz.addErrorLog(BackBone.SYNTAX, "'Expression expected' per il blocco. Definizione di espressione scorretta!");
+:}
+    |
+error GRAFFAPERTA lista_expr GRAFFACHIUSA {:
+    parser.report_error(" syntax error in expression\n",null);
+    parser.bz.addErrorLog(BackBone.SYNTAX, "'Expression expected' per il blocco. Definizione di espressione scorretta!");
+:}
+//FINE AGGIUNZIONE
+;
+
+expr ::= ATTRIBUZIONE KEYWORD:a ATOMO:b {:
+    System.out.println("[DEBUG] EXPR found: "+a+" with atom "+b);
+    RESULT = new Vector(2);
+    RESULT.add(a);
+    RESULT.add(b);
+:}
+
+    |
+
+    ATTRIBUZIONE error ATOMO:a {:
+    parser.report_error(" syntax error in expression\n",null);  
+    RESULT = new Vector(1);
+    RESULT.add(a);    	
+:}
+    |
+
+    ATTRIBUZIONE KEYWORD:a error {:
+    parser.report_error(" syntax error in expression\n",null);  
+    RESULT = new Vector(1);
+    RESULT.add(a);         	
+:}	
+;
+
+macro ::= ATTRIBUZIONE KEYWORD:a GRAFFAPERTA PLAIN_TEXT:b GRAFFACHIUSA {:
+
+    RESULT = new Vector();
+    System.out.println("[DEBUG] MACRO found with keyword "+a+" and PLAIN_TEXT="+b);
+    if(a.equals("Documentation")){
+        System.out.println("[DEBUG] Espressione di tipo Documentazione: " + b);
+        RESULT.add(a);
+        RESULT.add(b);}
+    else if(a.equals("Code")){
+        System.out.println("[DEBUG] Espressione di tipo Codice: " + b);
+        RESULT.add(a);
+        RESULT.add(b);}
+    else 
+        parser.bz.addErrorLog(BackBone.SEMANTIC, "Macro sconosciuta. Le macro possono essere solo di tipo Documentation o Code. ");
+:};
+
+simple_expr ::= expr:a PTVIR {:
+    System.out.println("[DEBUG] SIMPLE_EXPR found, from expr="+a+" and PTVIR then...");
+        RESULT=a;
+:};
+
+composed_expr ::= ATTRIBUZIONE KEYWORD:kw MY_TYPE:mt ATOMO:n PTVIR {:
+    System.out.println("[DEBUG] COMPOSED_EXPR found, from keyword="+kw+" and my_type="+mt);
+    RESULT = new Vector(2);
+    RESULT.add(kw);
+    RESULT.add(mt);
+    RESULT.add(n);
+:}
+
+| ATTRIBUZIONE KEYWORD:kw TYPE:t ATOMO:n PTVIR {:
+    System.out.println("[DEBUG] COMPOSED_EXPR found, from keyword="+kw+" and type="+t);
+    RESULT = new Vector(2);
+    RESULT.add(kw);
+    RESULT.add(t);
+    RESULT.add(n); 
+:};
+
+//LISTA EXPRESSION
+lista_expr ::= lista_expr:le simple_expr:se {:
+    System.out.println("[DEBUG] LISTA_EXPRESSION with a simple_expr added found (size of LISTA:"+le.size()+")");
+    le.add(se);
+    RESULT=le;
+:}
+
+
+| lista_expr:le composed_expr:coe {:
+    System.out.println("[DEBUG] LISTA_EXPRESSION with a composed_expr added found (size of LISTA:"+le.size()+")");
+    le.add(coe);
+    RESULT=le;
+:}
+
+
+| lista_expr:le complex_expr:ce {:
+    System.out.println("[DEBUG] LISTA_EXPRESSION with a complex_expr added found (size of LISTA:"+le.size()+")");
+    le.add(ce);
+    RESULT=le;
+:}
+ 
+
+| lista_expr:le macro:m {:
+    System.out.println("[DEBUG] LISTA_EXPRESSION with a macro added found (size of LISTA:"+le.size()+")");
+    le.add(m);
+    RESULT=le;
+:}
+
+| {:
+    System.out.println("[DEBUG] LISTA_EXPRESSION with an epsilon");
+    RESULT = new Vector();
+:};
+
+//COMPLEX EXPRESSION
+complex_expr ::= ATTRIBUZIONE KEYWORD:kw TYPE:t ATOMO:a QUADRAPERTA lista_atomo:la QUADRACHIUSA PTVIR {:
+    System.out.println("[DEBUG] COMPLEX_EXPR with a TYPE found: "+kw);
+    RESULT = new Vector();
+    RESULT.add(kw); //Vector(0)=Keyword
+    RESULT.add(t); //Vector(1)=Type
+    RESULT.add(a); //Vector(2)=Atomo
+    RESULT.addAll(la); //Vector(3toN)=Vector+All elements of lista atomo;
+:}
+
+| ATTRIBUZIONE KEYWORD:kw MY_TYPE:mt ATOMO:a QUADRAPERTA lista_atomo:la QUADRACHIUSA PTVIR {:
+
+    System.out.println("[DEBUG] COMPLEX_EXPR with a MYTYPE found: "+kw);
+    RESULT.add(kw); //Vector(0)=Keyword
+    RESULT.add(mt); //Vector(1)=Type
+    RESULT.add(a); //Vector(2)=Atomo
+    RESULT.addAll(la); //Vector(3toN)=Vector+All elements of lista atomo
+:}
+;
+
+//LISTA ATOMO
+lista_atomo ::= lista_atomo:la VIR ATOMO:b {:
+    System.out.println("[DEBUG] LISTA_ATOMO found ("+la.size()+" atoms)");
+    la.add(b);
+    RESULT=la;
+:}
+
+| ATOMO:a {:
+    System.out.println("[DEBUG] ATOMO found: "+a);
+    RESULT = new Vector();
+    RESULT.add(a);
+:};

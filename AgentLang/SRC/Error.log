@@ -1,0 +1,10 @@
+* * * Log degli errori nel parsing di AgentLang * * *
+
+Sono stati trovati errori durante il parsing del documento. E' stato creato
+comunque ilcodice parziale fino al verificarsi dell'errore. Si noti che il
+codice può risultare incompilabile e/o inconsistente in una o in più delle
+sue parti.
+
+Risolvere dunque i seguenti 1 errori:
+
+[SEMANTIC ERROR]: Impossibile definire una comunicazione senza identificatore.

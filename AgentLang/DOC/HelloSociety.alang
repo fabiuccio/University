@@ -1,0 +1,35 @@
+::Society HelloSociety
+	::Agent ProviderAgent {
+		::Documentation descrizione {
+			Questo agente è stato generato automaticamente
+		  dalle specifiche dettate dal linguaggio ad agenti
+		  di Alessandro e Fabio.
+		};
+		
+		::attrib int attributo1;
+		::attrib char attributo2;
+		::attrib String attribute3;
+		::attrib MioTipo attribute4;
+		
+		::Role wait_for_communications_role {
+			::Documentation descrizione2 {
+				Questo è un ruolo creato appositamente per prova. 
+				E' composto principalmente da due diversi task, ognuno dei
+				quali si occupa di restare in ascolto per una comunicazione diversa.
+				Sono previsti due task, in cui il primo si occupa di restare in ascolto per
+				degli agenti client e uno per degli agenti standard.
+			};
+			::task listen_for_clients[comm_among_clients]
+			::task listen_for_answer[comm_btw_agents]
+	}
+		
+	::Communication comm_btw_agents{
+  	::id 111982731
+		::protocol FIPA_CFP
+  }
+  
+  ::Communication comm_among_clients>{
+  	::id 111982732
+		::protocol FIPA_REQUEST
+  }
+}

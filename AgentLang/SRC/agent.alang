@@ -1,0 +1,59 @@
+::Society society2 {
+
+    /*Attenzione: non si possono usare come documentazione le vocali accentate!*/
+    ::Documentation {
+    	_Questa e' la documentazione della societa' ad agenti...
+    }
+    
+	::Agent agenteSender{
+	::Documentation {   
+	_documentazione dell'agente agente1
+	questa e' una documentazione su piu'
+	linee
+						}
+		::attrib Persona persona1;
+		::attrib int counter;
+		::attrib String nomeApplicazione;
+		::attrib String idApplicazione;
+		
+		::Role sendingRole{
+			::task provide serviceProviding[myService];
+			::attrib int i;
+			::attrib int j;
+			::task provide serviceProviding2[chilogrammi, temperatura];
+		}
+	}
+	
+	::Agent agenteReceiver{
+		::Documentation {_documentazione dell'agente agente ricevitore}
+		::attrib Blau ciao;
+		::attrib int coco;
+		::attrib String baubau;
+		
+		::Role receiverRole{
+			::task request serviceRequesting[myRequest,requestType];
+			::attrib String i;
+			::attrib String j;
+		}
+	}
+	::Agent agenteMediatore{
+		::attrib String names;
+		::Role mediatoreRole{
+			::task provide mediatore[agent1,agent2];
+			::attrib int a;
+			::attrib int b;
+		}
+		::Role mediatoreRole2{
+			::task provide mediatore2[agent1,agent2];
+			::attrib Boolean bool2;
+			::attrib Char charity2;
+		}
+	}
+	::Communication comm_btw_agents{
+		::id e11982731;
+		::protocol fipa_cfp;
+	}
+	::Communication comm_btw_agents2{
+		::protocol fipa_request;
+	}
+}
