@@ -1,0 +1,11 @@
+D:\UNI\tesina\VolumeLoggerUI\VolumeLoggerUI\VolumeLoggerUI\obj\Debug\VolumeLoggerUI.exe
+D:\UNI\tesina\VolumeLoggerUI\VolumeLoggerUI\VolumeLoggerUI\obj\Debug\VolumeLoggerUI.pdb
+D:\UNI\tesina\VolumeLoggerUI\VolumeLoggerUI\VolumeLoggerUI\bin\Debug\VolumeLoggerUI.exe
+D:\UNI\tesina\VolumeLoggerUI\VolumeLoggerUI\VolumeLoggerUI\bin\Debug\VolumeLoggerUI.pdb
+D:\UNI\tesina\VolumeLoggerUI\VolumeLoggerUI\VolumeLoggerUI\obj\Debug\ResolveAssemblyReference.cache
+D:\UNI\tesina\VolumeLoggerUI\VolumeLoggerUI\VolumeLoggerUI\obj\Debug\VolumeLoggerUI.AboutBox1.resources
+D:\UNI\tesina\VolumeLoggerUI\VolumeLoggerUI\VolumeLoggerUI\obj\Debug\VolumeLoggerUI.CancelSavingForm.resources
+D:\UNI\tesina\VolumeLoggerUI\VolumeLoggerUI\VolumeLoggerUI\obj\Debug\VolumeLoggerUI.MainForm.resources
+D:\UNI\tesina\VolumeLoggerUI\VolumeLoggerUI\VolumeLoggerUI\obj\Debug\VolumeLoggerUI.FormOptions.resources
+D:\UNI\tesina\VolumeLoggerUI\VolumeLoggerUI\VolumeLoggerUI\obj\Debug\VolumeLoggerUI.Properties.Resources.resources
+D:\UNI\tesina\VolumeLoggerUI\VolumeLoggerUI\VolumeLoggerUI\obj\Debug\VolumeLoggerUI.csproj.GenerateResource.Cache

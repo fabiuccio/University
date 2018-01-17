@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <field id="active">true</field>
+    <field id="finish">2008-04-13</field>
+    <field id="start">2008-02-18</field>
+    <field id="name">course_repository</field>
+    <field id="trackerPrefix">01BIF_2007-2008</field>
+    <field id="lead">mmz</field>
+</project>

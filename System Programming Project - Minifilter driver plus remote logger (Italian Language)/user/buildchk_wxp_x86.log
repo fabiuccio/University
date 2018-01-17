@@ -1,0 +1,9 @@
+BUILD: Computing Include file dependencies:
+BUILD: Examining c:\tesina\user directory for files to compile.
+skipping post pass 0 command
+Compiling c:\tesina\user *************
+'nmake.exe /nologo BUILDMSG=Stop. -i BUILD_PASS=PASS1 NOLINK=1 NOPASS0=1 MAKEDIR_RELATIVE_TO_BASEDIR='
+BUILDMSG: _NT_TARGET_VERSION SET TO WINXP
+Linking for c:\tesina\user *************
+'nmake.exe /nologo BUILDMSG=Stop. -i BUILD_PASS=PASS2 LINKONLY=1 NOPASS0=1 MAKEDLL=1 MAKEDIR_RELATIVE_TO_BASEDIR='
+BUILDMSG: _NT_TARGET_VERSION SET TO WINXP

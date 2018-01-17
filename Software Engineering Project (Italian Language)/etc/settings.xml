@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<hcs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="hcs.xsd">
+	<standard-temperatures presence="20.0" away="16.0" />
+	<standard-times heating="8" away="4" inside="2" />
+	<house>
+		<room name="living room" sqm="40" />
+		<room name="eating room" sqm="15" />
+		<room name="sleeping room" sqm="15" />
+		<room name="children room" sqm="20" />	
+		<room name="visitors room" sqm="15" />	
+		<room name="work room" sqm="10" />
+		<room name="kitchen" sqm="15" />
+		<room name="bathroom" sqm="5"/>
+		<room name="visitor bathroom" sqm="5" />
+		<room name="hall" sqm="10" />
+		<room name="music room" sqm="30" />
+	</house>
+</hcs>

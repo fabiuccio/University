@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="VolumeLoggerUI">
+</Property><Property Name="Solution File" Value="D:\UNI\tesina\VolumeLoggerUI\VolumeLoggerUI\VolumeLoggerUI.sln">
+</Property><Property Name="User Options File" Value="D:\UNI\tesina\VolumeLoggerUI\VolumeLoggerUI\VolumeLoggerUI.suo">
+</Property><Property Name="Date" Value="domenica 8 febbraio 2009">
+</Property><Property Name="Time" Value="12.47">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="VolumeLoggerUI.sln" Description="File successfully backed up as D:\UNI\tesina\VolumeLoggerUI\VolumeLoggerUI\Backup\VolumeLoggerUI.sln">
+</Event><Event ErrorLevel="0" Project="" Source="VolumeLoggerUI.suo" Description="File successfully backed up as D:\UNI\tesina\VolumeLoggerUI\VolumeLoggerUI\Backup\VolumeLoggerUI.suo">
+</Event><Event ErrorLevel="0" Project="VolumeLoggerUI" Source="VolumeLoggerUI\VolumeLoggerUI.csproj" Description="Project file successfully backed up as D:\UNI\tesina\VolumeLoggerUI\VolumeLoggerUI\Backup\VolumeLoggerUI\VolumeLoggerUI.csproj">
+</Event><Event ErrorLevel="0" Project="VolumeLoggerUI" Source="VolumeLoggerUI\AboutBox1.cs" Description="File successfully backed up as D:\UNI\tesina\VolumeLoggerUI\VolumeLoggerUI\Backup\VolumeLoggerUI\AboutBox1.cs">
+</Event><Event ErrorLevel="0" Project="VolumeLoggerUI" Source="VolumeLoggerUI\AboutBox1.Designer.cs" Description="File successfully backed up as D:\UNI\tesina\VolumeLoggerUI\VolumeLoggerUI\Backup\VolumeLoggerUI\AboutBox1.Designer.cs">
+</Event><Event ErrorLevel="0" Project="VolumeLoggerUI" Source="VolumeLoggerUI\DataReceiver.cs" Description="File successfully backed up as D:\UNI\tesina\VolumeLoggerUI\VolumeLoggerUI\Backup\VolumeLoggerUI\DataReceiver.cs">
+</Event><Event ErrorLevel="0" Project="VolumeLoggerUI" Source="VolumeLoggerUI\CancelSavingForm.cs" Description="File successfully backed up as D:\UNI\tesina\VolumeLoggerUI\VolumeLoggerUI\Backup\VolumeLoggerUI\CancelSavingForm.cs">
+</Event><Event ErrorLevel="0" Project="VolumeLoggerUI" Source="VolumeLoggerUI\CancelSavingForm.Designer.cs" Description="File successfully backed up as D:\UNI\tesina\VolumeLoggerUI\VolumeLoggerUI\Backup\VolumeLoggerUI\CancelSavingForm.Designer.cs">
+</Event><Event ErrorLevel="0" Project="VolumeLoggerUI" Source="VolumeLoggerUI\XMLHandler.cs" Description="File successfully backed up as D:\UNI\tesina\VolumeLoggerUI\VolumeLoggerUI\Backup\VolumeLoggerUI\XMLHandler.cs">
+</Event><Event ErrorLevel="0" Project="VolumeLoggerUI" Source="VolumeLoggerUI\MainForm.cs" Description="File successfully backed up as D:\UNI\tesina\VolumeLoggerUI\VolumeLoggerUI\Backup\VolumeLoggerUI\MainForm.cs">
+</Event><Event ErrorLevel="0" Project="VolumeLoggerUI" Source="VolumeLoggerUI\MainForm.Designer.cs" Description="File successfully backed up as D:\UNI\tesina\VolumeLoggerUI\VolumeLoggerUI\Backup\VolumeLoggerUI\MainForm.Designer.cs">
+</Event><Event ErrorLevel="0" Project="VolumeLoggerUI" Source="VolumeLoggerUI\FormOptions.cs" Description="File successfully backed up as D:\UNI\tesina\VolumeLoggerUI\VolumeLoggerUI\Backup\VolumeLoggerUI\FormOptions.cs">
+</Event><Event ErrorLevel="0" Project="VolumeLoggerUI" Source="VolumeLoggerUI\FormOptions.Designer.cs" Description="File successfully backed up as D:\UNI\tesina\VolumeLoggerUI\VolumeLoggerUI\Backup\VolumeLoggerUI\FormOptions.Designer.cs">
+</Event><Event ErrorLevel="0" Project="VolumeLoggerUI" Source="VolumeLoggerUI\Program.cs" Description="File successfully backed up as D:\UNI\tesina\VolumeLoggerUI\VolumeLoggerUI\Backup\VolumeLoggerUI\Program.cs">
+</Event><Event ErrorLevel="0" Project="VolumeLoggerUI" Source="VolumeLoggerUI\Properties\AssemblyInfo.cs" Description="File successfully backed up as D:\UNI\tesina\VolumeLoggerUI\VolumeLoggerUI\Backup\VolumeLoggerUI\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="VolumeLoggerUI" Source="VolumeLoggerUI\Properties\Resources.Designer.cs" Description="File successfully backed up as D:\UNI\tesina\VolumeLoggerUI\VolumeLoggerUI\Backup\VolumeLoggerUI\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="VolumeLoggerUI" Source="VolumeLoggerUI\Properties\Settings.Designer.cs" Description="File successfully backed up as D:\UNI\tesina\VolumeLoggerUI\VolumeLoggerUI\Backup\VolumeLoggerUI\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="VolumeLoggerUI" Source="VolumeLoggerUI\Properties\Settings.settings" Description="File successfully backed up as D:\UNI\tesina\VolumeLoggerUI\VolumeLoggerUI\Backup\VolumeLoggerUI\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="VolumeLoggerUI" Source="VolumeLoggerUI\Resources\Options.png" Description="File successfully backed up as D:\UNI\tesina\VolumeLoggerUI\VolumeLoggerUI\Backup\VolumeLoggerUI\Resources\Options.png">
+</Event><Event ErrorLevel="0" Project="VolumeLoggerUI" Source="VolumeLoggerUI\Resources\Close.png" Description="File successfully backed up as D:\UNI\tesina\VolumeLoggerUI\VolumeLoggerUI\Backup\VolumeLoggerUI\Resources\Close.png">
+</Event><Event ErrorLevel="0" Project="VolumeLoggerUI" Source="VolumeLoggerUI\Resources\Save.png" Description="File successfully backed up as D:\UNI\tesina\VolumeLoggerUI\VolumeLoggerUI\Backup\VolumeLoggerUI\Resources\Save.png">
+</Event><Event ErrorLevel="0" Project="VolumeLoggerUI" Source="VolumeLoggerUI\Resources\Load.png" Description="File successfully backed up as D:\UNI\tesina\VolumeLoggerUI\VolumeLoggerUI\Backup\VolumeLoggerUI\Resources\Load.png">
+</Event><Event ErrorLevel="0" Project="VolumeLoggerUI" Source="VolumeLoggerUI\Resources\Play.png" Description="File successfully backed up as D:\UNI\tesina\VolumeLoggerUI\VolumeLoggerUI\Backup\VolumeLoggerUI\Resources\Play.png">
+</Event><Event ErrorLevel="0" Project="VolumeLoggerUI" Source="VolumeLoggerUI\Resources\Stop.png" Description="File successfully backed up as D:\UNI\tesina\VolumeLoggerUI\VolumeLoggerUI\Backup\VolumeLoggerUI\Resources\Stop.png">
+</Event><Event ErrorLevel="0" Project="VolumeLoggerUI" Source="VolumeLoggerUI\Resources\Pause.png" Description="File successfully backed up as D:\UNI\tesina\VolumeLoggerUI\VolumeLoggerUI\Backup\VolumeLoggerUI\Resources\Pause.png">
+</Event><Event ErrorLevel="0" Project="VolumeLoggerUI" Source="VolumeLoggerUI\AboutBox1.resx" Description="File successfully backed up as D:\UNI\tesina\VolumeLoggerUI\VolumeLoggerUI\Backup\VolumeLoggerUI\AboutBox1.resx">
+</Event><Event ErrorLevel="0" Project="VolumeLoggerUI" Source="VolumeLoggerUI\CancelSavingForm.resx" Description="File successfully backed up as D:\UNI\tesina\VolumeLoggerUI\VolumeLoggerUI\Backup\VolumeLoggerUI\CancelSavingForm.resx">
+</Event><Event ErrorLevel="0" Project="VolumeLoggerUI" Source="VolumeLoggerUI\MainForm.resx" Description="File successfully backed up as D:\UNI\tesina\VolumeLoggerUI\VolumeLoggerUI\Backup\VolumeLoggerUI\MainForm.resx">
+</Event><Event ErrorLevel="0" Project="VolumeLoggerUI" Source="VolumeLoggerUI\FormOptions.resx" Description="File successfully backed up as D:\UNI\tesina\VolumeLoggerUI\VolumeLoggerUI\Backup\VolumeLoggerUI\FormOptions.resx">
+</Event><Event ErrorLevel="0" Project="VolumeLoggerUI" Source="VolumeLoggerUI\Properties\Resources.resx" Description="File successfully backed up as D:\UNI\tesina\VolumeLoggerUI\VolumeLoggerUI\Backup\VolumeLoggerUI\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="VolumeLoggerUI" Source="VolumeLoggerUI\VolumeLoggerUI.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="VolumeLoggerUI" Source="VolumeLoggerUI\VolumeLoggerUI.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="VolumeLoggerUI.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="VolumeLoggerUI.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="VolumeLoggerUI" Source="VolumeLoggerUI\VolumeLoggerUI.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

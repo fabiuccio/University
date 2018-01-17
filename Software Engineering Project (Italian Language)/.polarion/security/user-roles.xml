@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<user-roles>
+    <user name="group_01">
+        <role name="project_assignable"/>
+    </user>
+    <user name="group_02">
+        <role name="project_assignable"/>
+    </user>
+    <user name="group_03">
+        <role name="project_assignable"/>
+    </user>
+    <user name="group_04">
+        <role name="project_assignable"/>
+    </user>
+    <user name="group_05">
+        <role name="project_assignable"/>
+    </user>
+    <user name="group_06">
+        <role name="project_assignable"/>
+    </user>
+    <user name="group_07">
+        <role name="project_assignable"/>
+    </user>
+    <user name="group_08">
+        <role name="project_assignable"/>
+    </user>
+    <user name="group_09">
+        <role name="project_assignable"/>
+    </user>
+    <user name="group_10">
+        <role name="project_assignable"/>
+    </user>
+    <user name="group_11">
+        <role name="project_assignable"/>
+    </user>
+    <user name="group_12">
+        <role name="project_assignable"/>
+    </user>
+    <user name="group_13">
+        <role name="project_assignable"/>
+    </user>
+    <user name="group_14">
+        <role name="project_assignable"/>
+    </user>
+    <user name="tomassetti">
+        <role name="project_assignable"/>
+        <role name="project_user"/>
+        <role name="project_developer"/>
+    </user>
+    <user name="rolando">
+        <role name="project_user"/>
+        <role name="project_developer"/>
+        <role name="project_assignable"/>
+    </user>
+    <user name="casula">
+        <role name="project_user"/>
+        <role name="project_developer"/>
+        <role name="project_assignable"/>
+    </user>
+    <user name="cabiddu">
+        <role name="project_user"/>
+        <role name="project_developer"/>
+        <role name="project_assignable"/>
+    </user>
+    <user name="gaffoglio">
+        <role name="project_user"/>
+        <role name="project_developer"/>
+        <role name="project_assignable"/>
+    </user>
+    <user name="cosenza">
+        <role name="project_user"/>
+        <role name="project_developer"/>
+        <role name="project_assignable"/>
+    </user>
+    <user name="branca">
+        <role name="project_user"/>
+        <role name="project_developer"/>
+        <role name="project_assignable"/>
+    </user>
+    <user name="beuto">
+        <role name="project_user"/>
+        <role name="project_developer"/>
+        <role name="project_assignable"/>
+    </user>
+    <user name="zuccolo">
+        <role name="project_user"/>
+        <role name="project_developer"/>
+        <role name="project_assignable"/>
+    </user>
+    <user name="pizzo">
+        <role name="project_user"/>
+        <role name="project_developer"/>
+        <role name="project_assignable"/>
+    </user>
+    <user name="shyti">
+        <role name="project_user"/>
+        <role name="project_developer"/>
+        <role name="project_assignable"/>
+    </user>
+    <user name="ardito">
+        <role name="project_user"/>
+        <role name="project_assignable"/>
+    </user>
+    <user name="bertola">
+        <role name="project_user"/>
+        <role name="project_assignable"/>
+    </user>
+    <user name="aulico">
+        <role name="project_user"/>
+        <role name="project_assignable"/>
+    </user>
+    <user name="giambruno">
+        <role name="project_user"/>
+        <role name="project_developer"/>
+        <role name="project_assignable"/>
+    </user>
+    <user name="castellucci">
+        <role name="project_user"/>
+        <role name="project_assignable"/>
+    </user>
+    <user name="adamo">
+        <role name="project_user"/>
+        <role name="project_assignable"/>
+    </user>
+    <user name="indulsi">
+        <role name="project_user"/>
+        <role name="project_assignable"/>
+    </user>
+    <user name="oliva">
+        <role name="project_user"/>
+        <role name="project_assignable"/>
+    </user>
+    <user name="redner">
+        <role name="project_user"/>
+        <role name="project_assignable"/>
+    </user>
+    <user name="cantore">
+        <role name="project_user"/>
+        <role name="project_assignable"/>
+    </user>
+    <user name="jorge">
+        <role name="project_user"/>
+        <role name="project_developer"/>
+        <role name="project_assignable"/>
+    </user>
+    <user name="lopez">
+        <role name="project_user"/>
+        <role name="project_developer"/>
+        <role name="project_assignable"/>
+    </user>
+</user-roles>

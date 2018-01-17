@@ -1,0 +1,35 @@
+08/03/2008
+è stata fatta copia dei requisiti che erano sono nel course 
+repository anche nelle singole cartelle dei progetti.
+ora possono essere linkati da altri work items creati da voi
+(ad esempio defects)
+
+
+07/03/2008
+copiare la cartella /etc (e tutto il suo contenuto ) 
+allo stesso livello di trunk. quindi nuova struttura sarà:
+trunk - branches - tags - etc
+
+dentro etc modificare il file settings.xml per avere padronanza 
+delle stanze. il file hcs.xsd contiene lo schema a cui settings.xml
+fa riferimento.
+
+
+05/03/2008
+istruzioni per modificare gli stubs: 
+
+1.downlodare dal course_repository la cartella mystubs
+2.copiarla in trunk/src/
+3.modificare le classi 
+
+
+
+04/03/2008
+ho aggiunto i files appartenenti al package mystubs: in questo modo
+potete fare un "attache source" al jar modificarli,eseguendo
+gli acceptance tests
+
+
+03/03/2008
+la parte "reload artifacts" del setup è facoltativa: verrà comunque 
+eseguita lato server

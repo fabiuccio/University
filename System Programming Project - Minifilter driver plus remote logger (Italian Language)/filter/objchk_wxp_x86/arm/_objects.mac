@@ -1,0 +1,17 @@
+
+
+ARM_OBJECTS=\
+ $O\minispy.obj \
+ $O\mspylib.obj \
+ $O\registrationdata.obj \
+
+
+_RES_FILE=$O\minispy.res
+
+
+
+# lowercased
+BASEDIR=c:\winddk\6001
+OBJECT_ROOT=c:\winddk\6001
+MAKEDIR_LOWERCASE=c:\tesina\filter
+OBJ_PATH=c:\tesina\filter

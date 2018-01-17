@@ -1,0 +1,15 @@
+
+
+386_OBJECTS=\
+ $O\mspylog.obj \
+
+
+_RES_FILE=$O\mspyuser.res
+
+
+
+# lowercased
+BASEDIR=c:\winddk\6001
+OBJECT_ROOT=c:\winddk\6001
+MAKEDIR_LOWERCASE=c:\tesina\user
+OBJ_PATH=c:\tesina\user

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work-item>
+    <field id="created">2008-02-18 16:08:54.812 +0100</field>
+    <field id="title">Temp-UR-F 18</field>
+    <field id="severity">normal</field>
+    <field id="assignee">
+        <list>
+            <item>tomassetti</item> 
+<item>rolando</item>
+<item>casula</item>
+<item>cabiddu</item>
+<item>gaffoglio</item>
+<item>cosenza</item>
+<item>branca</item> 
+<item>beuto</item>
+<item>zuccolo</item>
+<item>pizzo</item>
+<item>shyti</item>
+<item>ardito</item>
+<item>bertola</item>
+<item>aulico</item>
+<item>giambruno</item>
+<item>castellucci</item>
+<item>adamo</item>
+<item>indulsi</item>
+<item>oliva</item>
+<item>redner</item>
+<item>cantore</item>
+<item>jorge</item>
+<item>lopez</item>
+        </list>
+    </field>
+    <field id="priority">25.0</field>
+    <field id="type">requirement</field>
+    <field id="status">open</field>
+    <field id="description" text-type="text/html"><![CDATA[
+<div>
+    <p style="margin-bottom: 0in; page-break-after: avoid;">
+        <font size="2">The temperature of the boiler shall be set to the maximum required by any heater, not to waste energy.</font>
+    </p>
+</div>
+
+]]></field>
+    <field id="author">vetro</field>
+</work-item>

@@ -1,0 +1,46 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+<xsd:simpleType name="positiveDouble">
+	<xsd:restriction base="xsd:double">
+		<xsd:minInclusive value="0.0" />
+	</xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="positiveInteger">
+	<xsd:restriction base="xsd:integer">
+		<xsd:minInclusive value="0" />
+	</xsd:restriction>
+</xsd:simpleType>
+
+<xsd:element name="hcs" >
+	<xsd:complexType >
+		<xsd:sequence>
+		<xsd:element name="standard-temperatures" >
+			<xsd:complexType >
+				<xsd:attribute name="presence" type="positiveDouble" use="required" />
+				<xsd:attribute name="away" type="positiveDouble" use="required" />
+			</xsd:complexType>
+		</xsd:element>
+		<xsd:element name="standard-times" >
+			<xsd:complexType>
+				<xsd:attribute name="heating" type="positiveInteger" use="required" />
+				<xsd:attribute name="away" type="positiveInteger" use="required" />
+				<xsd:attribute name="inside" type="positiveInteger" use="required" />
+			</xsd:complexType>
+		</xsd:element>
+		<xsd:element name="house" >
+			<xsd:complexType>
+				<xsd:sequence>
+					<xsd:element name="room" maxOccurs="unbounded">
+					<xsd:complexType>
+						<xsd:attribute name="name" type="xsd:string" use="required" />
+						<xsd:attribute name="sqm" type="xsd:integer" use="required" />
+					</xsd:complexType>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+		</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:element>
+</xsd:schema>

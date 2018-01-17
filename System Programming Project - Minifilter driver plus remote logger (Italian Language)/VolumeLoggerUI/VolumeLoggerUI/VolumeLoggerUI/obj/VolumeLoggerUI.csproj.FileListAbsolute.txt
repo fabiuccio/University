@@ -1,0 +1,28 @@
+D:\_AGDIR\Specialistica\Materie\Programmazione di sistema\PROGETTO\VolumeLoggerUI\VolumeLoggerUI\VolumeLoggerUI\bin\Debug\VolumeLoggerUI.exe
+D:\_AGDIR\Specialistica\Materie\Programmazione di sistema\PROGETTO\VolumeLoggerUI\VolumeLoggerUI\VolumeLoggerUI\bin\Debug\VolumeLoggerUI.pdb
+D:\_AGDIR\Specialistica\Materie\Programmazione di sistema\PROGETTO\VolumeLoggerUI\VolumeLoggerUI\VolumeLoggerUI\obj\Debug\ResolveAssemblyReference.cache
+D:\_AGDIR\Specialistica\Materie\Programmazione di sistema\PROGETTO\VolumeLoggerUI\VolumeLoggerUI\VolumeLoggerUI\obj\Debug\VolumeLoggerUI.Form1.resources
+D:\_AGDIR\Specialistica\Materie\Programmazione di sistema\PROGETTO\VolumeLoggerUI\VolumeLoggerUI\VolumeLoggerUI\obj\Debug\VolumeLoggerUI.Properties.Resources.resources
+D:\_AGDIR\Specialistica\Materie\Programmazione di sistema\PROGETTO\VolumeLoggerUI\VolumeLoggerUI\VolumeLoggerUI\obj\Debug\VolumeLoggerUI.csproj.GenerateResource.Cache
+D:\_AGDIR\Specialistica\Materie\Programmazione di sistema\PROGETTO\VolumeLoggerUI\VolumeLoggerUI\VolumeLoggerUI\obj\Debug\VolumeLoggerUI.exe
+D:\_AGDIR\Specialistica\Materie\Programmazione di sistema\PROGETTO\VolumeLoggerUI\VolumeLoggerUI\VolumeLoggerUI\obj\Debug\VolumeLoggerUI.pdb
+D:\_AGDIR\Specialistica\Materie\Programmazione di sistema\PROGETTO\VolumeLoggerUI\VolumeLoggerUI\VolumeLoggerUI\bin\Release\VolumeLoggerUI.exe
+D:\_AGDIR\Specialistica\Materie\Programmazione di sistema\PROGETTO\VolumeLoggerUI\VolumeLoggerUI\VolumeLoggerUI\bin\Release\VolumeLoggerUI.pdb
+D:\_AGDIR\Specialistica\Materie\Programmazione di sistema\PROGETTO\VolumeLoggerUI\VolumeLoggerUI\VolumeLoggerUI\obj\Release\ResolveAssemblyReference.cache
+D:\_AGDIR\Specialistica\Materie\Programmazione di sistema\PROGETTO\VolumeLoggerUI\VolumeLoggerUI\VolumeLoggerUI\obj\Release\VolumeLoggerUI.Form1.resources
+D:\_AGDIR\Specialistica\Materie\Programmazione di sistema\PROGETTO\VolumeLoggerUI\VolumeLoggerUI\VolumeLoggerUI\obj\Release\VolumeLoggerUI.Properties.Resources.resources
+D:\_AGDIR\Specialistica\Materie\Programmazione di sistema\PROGETTO\VolumeLoggerUI\VolumeLoggerUI\VolumeLoggerUI\obj\Release\VolumeLoggerUI.csproj.GenerateResource.Cache
+D:\_AGDIR\Specialistica\Materie\Programmazione di sistema\PROGETTO\VolumeLoggerUI\VolumeLoggerUI\VolumeLoggerUI\obj\Release\VolumeLoggerUI.exe
+D:\_AGDIR\Specialistica\Materie\Programmazione di sistema\PROGETTO\VolumeLoggerUI\VolumeLoggerUI\VolumeLoggerUI\obj\Release\VolumeLoggerUI.pdb
+D:\_AGDIR\Specialistica\Materie\Programmazione di sistema\PROGETTO\VolumeLoggerUI\VolumeLoggerUI\VolumeLoggerUI\obj\Debug\VolumeLoggerUI.FormOptions.resources
+C:\tesina\VolumeLoggerUI\VolumeLoggerUI\VolumeLoggerUI\obj\Debug\VolumeLoggerUI.exe
+C:\tesina\VolumeLoggerUI\VolumeLoggerUI\VolumeLoggerUI\obj\Debug\VolumeLoggerUI.pdb
+C:\tesina\VolumeLoggerUI\VolumeLoggerUI\VolumeLoggerUI\bin\Debug\VolumeLoggerUI.exe
+C:\tesina\VolumeLoggerUI\VolumeLoggerUI\VolumeLoggerUI\bin\Debug\VolumeLoggerUI.pdb
+C:\tesina\VolumeLoggerUI\VolumeLoggerUI\VolumeLoggerUI\obj\Debug\ResolveAssemblyReference.cache
+C:\tesina\VolumeLoggerUI\VolumeLoggerUI\VolumeLoggerUI\obj\Debug\VolumeLoggerUI.FormOptions.resources
+C:\tesina\VolumeLoggerUI\VolumeLoggerUI\VolumeLoggerUI\obj\Debug\VolumeLoggerUI.Properties.Resources.resources
+C:\tesina\VolumeLoggerUI\VolumeLoggerUI\VolumeLoggerUI\obj\Debug\VolumeLoggerUI.csproj.GenerateResource.Cache
+C:\tesina\VolumeLoggerUI\VolumeLoggerUI\VolumeLoggerUI\obj\Debug\VolumeLoggerUI.MainForm.resources
+C:\tesina\VolumeLoggerUI\VolumeLoggerUI\VolumeLoggerUI\obj\Debug\VolumeLoggerUI.CancelSavingForm.resources
+C:\tesina\VolumeLoggerUI\VolumeLoggerUI\VolumeLoggerUI\obj\Debug\VolumeLoggerUI.AboutBox1.resources
