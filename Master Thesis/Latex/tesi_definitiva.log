@@ -1,0 +1,1437 @@
+This is pdfTeX, Version 3.1415926-1.40.9 (MiKTeX 2.7) (preloaded format=pdflatex 2009.5.15)  6 JUL 2009 16:49
+entering extended mode
+**C:/Users/kaab/Desktop/TESI/Finale/tesi_definitiva.tex
+(C:/Users/kaab/Desktop/TESI/Finale/tesi_definitiva.tex
+LaTeX2e <2005/12/01>
+Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman, ngerman, german-x-2008-06-18, ngerman-x-2008-06-18, french, italian, load
+ed.
+("C:\Program Files\MiKTeX 2.7\tex\latex\toptesi\toptesi.cls"
+Document Class: toptesi 2008/12/15 v.5.00 Class for typesetting university thes
+es
+("C:\Program Files\MiKTeX 2.7\tex\latex\base\report.cls"
+Document Class: report 2005/09/16 v1.4f Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.7\tex\latex\base\size11.clo"
+File: size11.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files\MiKTeX 2.7\tex\generic\babel\babel.sty"
+Package: babel 2008/07/06 v3.8l The Babel package
+
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Program Files\MiKTeX 2.7\tex\latex\00miktex\bblopts.cfg"
+File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
+)
+("C:\Program Files\MiKTeX 2.7\tex\generic\babel\english.ldf"
+Language: english 2005/03/30 v3.3o English support from the babel system
+
+("C:\Program Files\MiKTeX 2.7\tex\generic\babel\babel.def"
+File: babel.def 2008/07/06 v3.8l Babel common definitions
+\babel@savecnt=\count88
+\U@D=\dimen103
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+)
+("C:\Program Files\MiKTeX 2.7\tex\generic\babel\italian.ldf"
+Language: italian 2008/03/14 v1.2t Italian support from the babel system
+Package babel Info: Making " an active character on input line 94.
+))
+("C:\Program Files\MiKTeX 2.7\tex\latex\toptesi\toptesi.sty"
+Package: toptesi 2008/12/15 v.5.00 Extension for toptesi.cls
+
+("C:\Program Files\MiKTeX 2.7\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.7\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Program Files\MiKTeX 2.7\tex\latex\graphics\graphics.sty"
+Package: graphics 2006/02/20 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.7\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.7\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 90.
+
+("C:\Program Files\MiKTeX 2.7\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2008/09/08 v0.04l Graphics/color for pdfTeX
+\Gread@gobject=\count89
+))
+\Gin@req@height=\dimen104
+\Gin@req@width=\dimen105
+)
+\@intesta=\box26
+\captionwidth=\dimen106
+
+("C:\Program Files\MiKTeX 2.7\tex\latex\toptesi\topfront.sty"
+Package: topfront 2008/12/15 v.5.00 Title page for TOPtesi
+
+("C:\Program Files\MiKTeX 2.7\tex\latex\toptesi\toptesi.cfg"))
+("C:\Program Files\MiKTeX 2.7\tex\latex\toptesi\topcoman.sty"
+Package: topcoman 2008/12/15 v.5.00 Additional commands for the TOPtesi bundle
+\tabwidth=\dimen107
+)))
+("C:\Program Files\MiKTeX 2.7\tex\latex\base\inputenc.sty"
+Package: inputenc 2006/05/05 v1.1b Input encoding file
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
+
+("C:\Program Files\MiKTeX 2.7\tex\latex\base\ansinew.def"
+File: ansinew.def 2006/05/05 v1.1b Input encoding file
+))
+(tesi_definitiva.aux
+
+LaTeX Warning: Label `fig:nettiers' multiply defined.
+
+
+LaTeX Warning: Label `fig:nettiers' multiply defined.
+
+
+LaTeX Warning: Label `nwComp' multiply defined.
+
+
+LaTeX Warning: Label `nwComp' multiply defined.
+
+
+LaTeX Warning: Label `nwComp' multiply defined.
+
+
+LaTeX Warning: Label `nwComp' multiply defined.
+
+
+LaTeX Warning: Label `nwComp' multiply defined.
+
+)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 26.
+LaTeX Font Info:    Try loading font information for LGR+cmr on input line 26.
+ ("C:\Program Files\MiKTeX 2.7\tex\generic\babel\lgrcmr.fd"
+File: lgrcmr.fd 2008/06/17 v2.3 Greek Computer Modern
+)
+LaTeX Font Info:    ... okay on input line 26.
+
+("C:\Program Files\MiKTeX 2.7\tex\context\base\supp-pdf.tex"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count90
+\scratchdimen=\dimen108
+\scratchbox=\box27
+\nofMPsegments=\count91
+\nofMParguments=\count92
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count93
+\MPscratchDim=\dimen109
+\MPnumerator=\count94
+\everyMPtoPDFconversion=\toks18
+) <logopolito.pdf, id=1, 526.79488pt x 523.45164pt>
+File: logopolito.pdf Graphic file (type pdf)
+ <use logopolito.pdf>
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 30.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 30.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 30.
+
+[1{C:/ProgramData/MiKTeX/2.7/pdftex/config/pdftex.map}
+
+
+
+
+ <C:/Program Files/MiKTeX 2.7/tex/latex/toptesi/logopolito.pdf>] (tesi_definiti
+va.toc
+Overfull \hbox (7.58977pt too wide) in paragraph at lines 42--42
+ [][] []\OT1/cmr/m/n/10.95 Introduction to a spe-cific ap-pli-ca-tion con-text:
+ touris-tic re-sorts, restau- 
+ []
+
+[2
+
+
+] [3] [4])
+\tf@toc=\write3
+ [5] [1
+
+
+
+]
+Chapter 1.
+
+<C:/Users/kaab/Desktop/TESI/Finale/images/mondello_tag.jpg, id=33, 246.6816pt x
+ 164.0529pt>
+File: C:/Users/kaab/Desktop/TESI/Finale/images/mondello_tag.jpg Graphic file (t
+ype jpg)
+ <use C:/Users/kaab/Desktop/TESI/Finale/images/mondello_tag.jpg>
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 66.
+
+("C:\Program Files\MiKTeX 2.7\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 66.
+ [2
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3 <C:/Users/kaab/Desktop/TESI/Finale/images/mondello_tag.jpg>] [4] [5]
+Chapter 2.
+<images/Barcode.jpg, id=49, 473.51906pt x 84.315pt>
+File: images/Barcode.jpg Graphic file (type jpg)
+ <use images/Barcode.jpg>
+[6
+
+ <images/Barcode.jpg>]
+<images/rfid_history.jpg, id=53, 210.7875pt x 251.94125pt>
+File: images/rfid_history.jpg Graphic file (type jpg)
+
+<use images/rfid_history.jpg> [7 <images/rfid_history.jpg>]
+Underfull \hbox (badness 1939) in paragraph at lines 151--151
+[]\OT1/cmr/m/n/10.95 Reading ca-pa-bil-
+ []
+
+
+Underfull \hbox (badness 2080) in paragraph at lines 152--152
+[]\OT1/cmr/m/n/10.95 Resistant when in-serted in
+ []
+
+
+Underfull \hbox (badness 2426) in paragraph at lines 155--155
+[]\OT1/cmr/m/n/10.95 From some cents to some
+ []
+
+
+Underfull \hbox (badness 5637) in paragraph at lines 159--159
+[]\OT1/cmr/m/n/10.95 Product pack-ag-
+ []
+
+
+Underfull \vbox (badness 5756) has occurred while \output is active []
+
+ [8]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 175.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 175.
+
+<images/rfid_system.jpg, id=61, 210.0648pt x 120.2091pt>
+File: images/rfid_system.jpg Graphic file (type jpg)
+
+<use images/rfid_system.jpg> [9 <images/rfid_system.jpg>]
+<images/rfid_tag.jpg, id=68, 250.9375pt x 248.93pt>
+File: images/rfid_tag.jpg Graphic file (type jpg)
+ <use images/rfid_tag.jpg>
+[10 <images/rfid_tag.jpg>]
+Underfull \hbox (badness 1077) in paragraph at lines 231--231
+\OT1/cmr/m/n/10.95 for class 0,I,II,III tags and
+ []
+
+
+Underfull \hbox (badness 1297) in paragraph at lines 231--231
+\OT1/cmr/m/n/10.95 com-mu-ni-cate with class IV
+ []
+
+[11] <images/rfid_reader.jpg, id=75, 246.6816pt x 171.039pt>
+File: images/rfid_reader.jpg Graphic file (type jpg)
+
+<use images/rfid_reader.jpg> [12]
+<images/external_antennas.jpg, id=79, 337.26pt x 235.63031pt>
+File: images/external_antennas.jpg Graphic file (type jpg)
+
+<use images/external_antennas.jpg> [13 <images/rfid_reader.jpg>] [14 <images/ex
+ternal_antennas.jpg>] [15] [16]
+<images/epc_global.jpg, id=93, 496.85625pt x 432.86719pt>
+File: images/epc_global.jpg Graphic file (type jpg)
+
+<use images/epc_global.jpg> [17 <images/epc_global.jpg>]
+<images/cow_rfid.jpg, id=97, 356.33125pt x 313.17pt>
+File: images/cow_rfid.jpg Graphic file (type jpg)
+ <use images/cow_rfid.jpg>
+[18] <images/rfid_baggage.jpg, id=101, 602.25pt x 451.6875pt>
+File: images/rfid_baggage.jpg Graphic file (type jpg)
+
+<use images/rfid_baggage.jpg>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19 <images/cow_rfid.jpg>] <images/rfid_smart.jpg, id=105, 609.27625pt x 321.2
+pt>
+File: images/rfid_smart.jpg Graphic file (type jpg)
+
+<use images/rfid_smart.jpg>
+Underfull \vbox (badness 5460) has occurred while \output is active []
+
+ [20 <images/rfid_baggage.jpg> <images/rfid_smart.jpg>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21]
+[22] [23] [24] [25
+
+]
+Chapter 3.
+[26
+
+] <images/business_reengineering.png, id=129, 326.1786pt x 260.8947pt>
+File: images/business_reengineering.png Graphic file (type png)
+
+<use images/business_reengineering.png>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [27 <images/business_reengineering.png (PNG copy)>]
+<images/resort_map.jpg, id=133, 587.19376pt x 410.53375pt>
+File: images/resort_map.jpg Graphic file (type jpg)
+
+<use images/resort_map.jpg>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [28 <images/resort_map.jpg>] [29]
+<images/wearable_rfid.jpg, id=140, 150.5625pt x 177.66376pt>
+File: images/wearable_rfid.jpg Graphic file (type jpg)
+
+<use images/wearable_rfid.jpg> [30 <images/wearable_rfid.jpg>] [31]
+Overfull \hbox (25.8161pt too wide) in paragraph at lines 625--626
+[]\OT1/cmr/bx/n/10.95 Changing Op-por-tu-ni-ties: \OT1/cmr/m/n/10.95 RFID tags 
+and au-to-matic ac-cess con-trol de-vices(tripods
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [32]
+[33] [34] [35] [36] [37] [38] [39]
+Chapter 4.
+[40
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 779--780
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 781--782
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 783--784
+
+ []
+
+[41]
+Underfull \hbox (badness 10000) in paragraph at lines 785--786
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 787--788
+
+ []
+
+<images/prob-opp.jpg, id=180, 727.71875pt x 583.17876pt>
+File: images/prob-opp.jpg Graphic file (type jpg)
+
+<use images/prob-opp.jpg> [42] [43 <images/prob-opp.jpg>]
+<images/modules.jpg, id=187, 821.0675pt x 527.9725pt>
+File: images/modules.jpg Graphic file (type jpg)
+ <use images/modules.jpg>
+[44 <images/modules.jpg>] [45] [46]
+Overfull \hbox (23.99998pt too wide) in paragraph at lines 944--956
+ [][] 
+ []
+
+[47] [48]
+Underfull \hbox (badness 2951) in paragraph at lines 1000--1000
+\OT1/cmr/m/n/10.95 trac-tive tech-nol-ogy (RFID)
+ []
+
+
+Underfull \hbox (badness 4048) in paragraph at lines 1000--1000
+\OT1/cmr/m/n/10.95 i-tive stake-hold-ers' ex-pec-ta-
+ []
+
+
+Underfull \hbox (badness 4686) in paragraph at lines 1002--1002
+\OT1/cmr/m/n/10.95 cess con-trol that pre-vents
+ []
+
+
+Underfull \hbox (badness 5578) in paragraph at lines 1004--1004
+\OT1/cmr/m/n/10.95 for-ma-tion ba-sis for short,
+ []
+
+
+Underfull \hbox (badness 2302) in paragraph at lines 1004--1004
+\OT1/cmr/m/n/10.95 to track all events re-veal-
+ []
+
+
+Underfull \hbox (badness 1867) in paragraph at lines 1004--1004
+\OT1/cmr/m/n/10.95 trends in or-der to pro-cess
+ []
+
+
+Underfull \hbox (badness 2707) in paragraph at lines 1005--1005
+[]\OT1/cmr/m/n/10.95 Development of a pe-ri-odic
+ []
+
+[49] [50] [51] [52] [53] [54] [55] [56] [57]
+Chapter 5.
+[58
+
+]
+
+LaTeX Warning: Reference `tempScenarios' on page 59 undefined on input line 118
+4.
+
+
+<C:/Users/kaab/Desktop/TESI/Finale/images/scenario_template.jpg, id=236, 686.56
+5pt x 167.87718pt>
+File: C:/Users/kaab/Desktop/TESI/Finale/images/scenario_template.jpg Graphic fi
+le (type jpg)
+
+<use C:/Users/kaab/Desktop/TESI/Finale/images/scenario_template.jpg>
+<images/usecaseT.jpg, id=237, 918.43124pt x 336.25626pt>
+File: images/usecaseT.jpg Graphic file (type jpg)
+
+<use images/usecaseT.jpg> [59 <C:/Users/kaab/Desktop/TESI/Finale/images/scenari
+o_template.jpg> <images/usecaseT.jpg>] [60] [61] [62] [63] [64] [65] [66]
+[67] [68] [69] [70] [71] [72] [73] [74] [75] [76]
+<images/rich_client_architecture.jpg, id=295, 320.69812pt x 364.36125pt>
+File: images/rich_client_architecture.jpg Graphic file (type jpg)
+
+<use images/rich_client_architecture.jpg> [77 <images/rich_client_architecture.
+jpg>] [78] [79] [80]
+<images/Architettura_prescelta_botteghino.jpg, id=309, 461.47406pt x 200.24812p
+t>
+File: images/Architettura_prescelta_botteghino.jpg Graphic file (type jpg)
+ <use images/Architettura_prescelta_botteghino.jpg> [81 <images/Architettura_pr
+escelta_botteghino.jpg>] [82] [83] [84]
+<images/remote_interface_architecture.jpg, id=322, 642.4pt x 401.5pt>
+File: images/remote_interface_architecture.jpg Graphic file (type jpg)
+
+<use images/remote_interface_architecture.jpg> [85] [86 <images/remote_interfac
+e_architecture.jpg>] [87]
+<images/service_application.jpg, id=333, 449.68pt x 480.79625pt>
+File: images/service_application.jpg Graphic file (type jpg)
+
+<use images/service_application.jpg>
+<images/bar_p.jpg, id=334, 431.6125pt x 160.6pt>
+File: images/bar_p.jpg Graphic file (type jpg)
+ <use images/bar_p.jpg>
+[88]
+Underfull \vbox (badness 3547) has occurred while \output is active []
+
+ [89 <images/service_application.jpg> <images/bar_p.jpg>] [90]
+<images/rigel_design.jpg, id=344, 329.23pt x 437.635pt>
+File: images/rigel_design.jpg Graphic file (type jpg)
+
+<use images/rigel_design.jpg>
+Underfull \vbox (badness 3872) has occurred while \output is active []
+
+ [91 <images/rigel_design.jpg>] [92]
+Overfull \hbox (87.30946pt too wide) in paragraph at lines 1997--1998
+\OT1/cmr/m/n/10.95 duc-ing any mal-func-tion) to ev-ery un-premed-i-tated ar-ch
+i-tec-tural(HW or SW) change(expansions/contractions)
+ []
+
+[93]
+Overfull \hbox (7.97081pt too wide) in paragraph at lines 2024--2026
+[]\OT1/cmr/m/n/10.95 It has to be in-stalled like a ser-vice start-ing au-to-ma
+t-i-cally at the OS boot-strap. Turnstiles-
+ []
+
+<images/turnstile_sdd.jpg, id=355, 526.96875pt x 253.94875pt>
+File: images/turnstile_sdd.jpg Graphic file (type jpg)
+
+<use images/turnstile_sdd.jpg> [94 <images/turnstile_sdd.jpg>]
+<images/turnstile_candidate.jpg, id=359, 399.4925pt x 404.51125pt>
+File: images/turnstile_candidate.jpg Graphic file (type jpg)
+
+<use images/turnstile_candidate.jpg> [95]
+Overfull \hbox (1.20091pt too wide) in paragraph at lines 2105--2106
+\OT1/cmr/m/n/10.95 for the cus-tomer's credit ac-count recharg-ing, even-tual I
+T Kiosk mal-func-tions/unavailability
+ []
+
+[96 <images/turnstile_candidate.jpg>] [97] [98]
+<images/kiosk_app_schema.jpg, id=373, 352.31625pt x 421.575pt>
+File: images/kiosk_app_schema.jpg Graphic file (type jpg)
+
+<use images/kiosk_app_schema.jpg> [99 <images/kiosk_app_schema.jpg>]
+<images/kiosk_deploy_schema.jpg, id=377, 626.34pt x 301.125pt>
+File: images/kiosk_deploy_schema.jpg Graphic file (type jpg)
+
+<use images/kiosk_deploy_schema.jpg> [100 <images/kiosk_deploy_schema.jpg>]
+[101] <images/itKioskDesign.jpg, id=384, 595.22375pt x 476.78125pt>
+File: images/itKioskDesign.jpg Graphic file (type jpg)
+
+<use images/itKioskDesign.jpg> [102 <images/itKioskDesign.jpg>] [103] [104]
+[105]
+Underfull \hbox (badness 10000) in paragraph at lines 2296--2296
+[]\OT1/cmr/m/n/10.95 ITBeach mod-ules run-ning
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2296--2296
+\OT1/cmr/m/n/10.95 ma-chine:Bar mod-ule, IT
+ []
+
+
+Underfull \hbox (badness 3108) in paragraph at lines 2299--2299
+[]\OT1/cmr/m/n/10.95 Used by " PDA mod-ule"
+ []
+
+
+Underfull \hbox (badness 3713) in paragraph at lines 2299--2299
+\OT1/cmr/m/n/10.95 to print not-fiscal re-ceipts
+ []
+
+
+Underfull \hbox (badness 1946) in paragraph at lines 2303--2303
+[]\OT1/cmr/m/n/10.95 Desktop RFID read-ing de-
+ []
+
+
+Underfull \hbox (badness 2057) in paragraph at lines 2303--2303
+\OT1/cmr/m/n/10.95 vices to be used in mod-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2305--2305
+[]\OT1/cmr/m/n/10.95 Accesses con-trol gate by
+ []
+
+[106] [107]
+Chapter 6.
+
+<C:/Users/kaab/Desktop/TESI/Finale/images/arch_view.jpg, id=404, 507.8975pt x 5
+25.965pt>
+File: C:/Users/kaab/Desktop/TESI/Finale/images/arch_view.jpg Graphic file (type
+ jpg)
+ <use C:/Users/kaab/Desktop/TESI/Finale/images/arch_view.jpg> [108
+
+]
+Underfull \vbox (badness 7704) has occurred while \output is active []
+
+ [109 <C:/Users/kaab/Desktop/TESI/Finale/images/arch_view.jpg>] [110] [111] [11
+2]
+<images/data_access_helper.jpg, id=421, 387.4475pt x 317.185pt>
+File: images/data_access_helper.jpg Graphic file (type jpg)
+
+<use images/data_access_helper.jpg> [113 <images/data_access_helper.jpg>]
+<images/business_entities.jpg, id=425, 484.81125pt x 380.42125pt>
+File: images/business_entities.jpg Graphic file (type jpg)
+
+<use images/business_entities.jpg> [114] [115 <images/business_entities.jpg>]
+[116] [117] [118] [119]
+Overfull \hbox (6.93771pt too wide) in paragraph at lines 2580--2581
+ \OT1/cmr/bx/n/10.95 How does the DataRepos-i-tory know which provider to use?[
+] \OT1/cmr/m/n/10.95 When the DataRepos-
+ []
+
+[120] [121] <images/nettiers.jpg, id=451, 556.0775pt x 523.9575pt>
+File: images/nettiers.jpg Graphic file (type jpg)
+
+<use images/nettiers.jpg> [122 <images/nettiers.jpg>]
+Overfull \hbox (27.355pt too wide) in paragraph at lines 2668--2668
+[]      \OT1/cmtt/m/n/10.95 type="ITBeach.Data.SqlClient.SqlNetTiersProvider, I
+TBeach.Data.SqlClient"[] 
+ []
+
+[123] [124] [125] [126]
+<images/presentationSchema.png, id=469, 185.19188pt x 207.77625pt>
+File: images/presentationSchema.png Graphic file (type png)
+
+<use images/presentationSchema.png> [127] [128 <images/presentationSchema.png>]
+[129] <images/presentationComponents.jpg, id=480, 263.48438pt x 191.9672pt>
+File: images/presentationComponents.jpg Graphic file (type jpg)
+
+<use images/presentationComponents.jpg> [130] [131 <images/presentationComponen
+ts.jpg>] <images/BO_main_view.jpg, id=487, 963.6pt x 578.91281pt>
+File: images/BO_main_view.jpg Graphic file (type jpg)
+
+<use images/BO_main_view.jpg> [132]
+<images/BO_Step1.jpg, id=491, 963.6pt x 577.40718pt>
+File: images/BO_Step1.jpg Graphic file (type jpg)
+ <use images/BO_Step1.jpg>
+[133 <images/BO_main_view.jpg> <images/BO_Step1.jpg>]
+<images/BO_Map_View.jpg, id=495, 963.6pt x 577.40718pt>
+File: images/BO_Map_View.jpg Graphic file (type jpg)
+
+<use images/BO_Map_View.jpg>
+<images/BO_Step3.jpg, id=496, 963.6pt x 577.40718pt>
+File: images/BO_Step3.jpg Graphic file (type jpg)
+ <use images/BO_Step3.jpg>
+<images/BO_Step5.jpg, id=497, 963.6pt x 577.40718pt>
+File: images/BO_Step5.jpg Graphic file (type jpg)
+ <use images/BO_Step5.jpg>
+[134 <images/BO_Map_View.jpg>] [135 <images/BO_Step3.jpg> <images/BO_Step5.jpg>
+] <images/BO_Client_search.jpg, id=505, 963.6pt x 577.40718pt>
+File: images/BO_Client_search.jpg Graphic file (type jpg)
+
+<use images/BO_Client_search.jpg> [136 <images/BO_Client_search.jpg>]
+<images/BO_management_form.jpg, id=509, 963.6pt x 577.40718pt>
+File: images/BO_management_form.jpg Graphic file (type jpg)
+
+<use images/BO_management_form.jpg> [137 <images/BO_management_form.jpg>]
+[138] [139]
+<images/MDI_Structure_screen_shot.jpg, id=519, 539.76656pt x 316.93407pt>
+File: images/MDI_Structure_screen_shot.jpg Graphic file (type jpg)
+
+<use images/MDI_Structure_screen_shot.jpg>
+Underfull \vbox (badness 2326) has occurred while \output is active []
+
+ [140 <images/MDI_Structure_screen_shot.jpg>]
+Overfull \hbox (0.19423pt too wide) in paragraph at lines 2970--2971
+[]\OT1/cmr/m/n/10.95 An anal-y-sis of the UIP Ap-pli-ca-tion Block re-veals tha
+t the model-view-controller (MVC)
+ []
+
+<images/MVC_pattern.jpg, id=524, 277.78781pt x 121.20282pt>
+File: images/MVC_pattern.jpg Graphic file (type jpg)
+
+<use images/MVC_pattern.jpg>
+<images/UIPAB_infrastructure.jpg, id=525, 344.03531pt x 422.32782pt>
+File: images/UIPAB_infrastructure.jpg Graphic file (type jpg)
+
+<use images/UIPAB_infrastructure.jpg>
+Underfull \hbox (badness 10000) in paragraph at lines 2995--3009
+
+ []
+
+[141]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [142 <images/MVC_pattern.jpg>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [143 <images/UIPAB_infrastructure.jpg>] [144] [145]
+Overfull \hbox (21.60631pt too wide) in paragraph at lines 3102--3102
+[]\OT1/cmtt/m/n/10.95 BoxOfficeUIController, Version=1.0.0.0,Culture=neutral,Pu
+blicKeyToken=null" />[] 
+ []
+
+[146] [147] [148]
+Underfull \hbox (badness 10000) in paragraph at lines 3190--3190
+[]\OT1/cmr/bx/n/10.95 Device
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3192--3192
+[]\OT1/cmr/m/n/10.95 Acer As-pire
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3192--3192
+[]\OT1/cmr/m/n/10.95 Euronics
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3192--3192
+[]\OT1/cmr/m/n/10.95 Acer lap-top char-ac-ter-ized
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3192--3192
+\OT1/cmr/m/n/10.95 dual core pro-ces-sor(2,16
+ []
+
+
+Underfull \hbox (badness 4686) in paragraph at lines 3192--3192
+\OT1/cmr/m/n/10.95 HD; DVD reader; shared
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3192--3192
+\OT1/cmr/m/n/10.95 Eth-er-net Net-work in-ter-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3193--3193
+[]\OT1/cmr/m/n/10.95 RFID
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3193--3193
+[]\OT1/cmr/m/n/10.95 Arygon, ISO
+ []
+
+
+Underfull \hbox (badness 1603) in paragraph at lines 3193--3193
+\OT1/cmr/m/n/10.95 14443-NFC com-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3193--3193
+\OT1/cmr/m/n/10.95 pli-ant, USB
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3193--3193
+[]\OT1/cmr/m/n/10.95 IDTronic
+ []
+
+
+Underfull \hbox (badness 2057) in paragraph at lines 3193--3193
+[]\OT1/cmr/m/n/10.95 USB RFID desk-top reader
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3194--3194
+[]\OT1/cmr/m/n/10.95 Receipt
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3194--3194
+[]\OT1/cmr/m/n/10.95 Custom KUBE
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3194--3194
+[]\OT1/cmr/m/n/10.95 Custom
+ []
+
+
+Overfull \hbox (3.09445pt too wide) in paragraph at lines 3188--3196
+ [][] 
+ []
+
+[149] [150] <images/remote_interf_1.jpg, id=557, 1043.9pt x 726.715pt>
+File: images/remote_interf_1.jpg Graphic file (type jpg)
+
+<use images/remote_interf_1.jpg> [151 <images/remote_interf_1.jpg>]
+<images/remote_interface_mainform.jpg, id=561, 1284.8pt x 714.67pt>
+File: images/remote_interface_mainform.jpg Graphic file (type jpg)
+
+<use images/remote_interface_mainform.jpg>
+<images/crud_template.jpg, id=562, 1046.91125pt x 480.79625pt>
+File: images/crud_template.jpg Graphic file (type jpg)
+
+<use images/crud_template.jpg> [152 <images/remote_interface_mainform.jpg>]
+[153 <images/crud_template.jpg>]
+<images/map2.jpg, id=570, 1032.85875pt x 771.88374pt>
+File: images/map2.jpg Graphic file (type jpg)
+ <use images/map2.jpg>
+[154] [155 <images/map2.jpg>]
+<images/map1.jpg, id=577, 495.8525pt x 442.65375pt>
+File: images/map1.jpg Graphic file (type jpg)
+ <use images/map1.jpg>
+Underfull \hbox (badness 10000) in paragraph at lines 3365--3365
+[]\OT1/cmr/bx/n/10.95 Device
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3366--3366
+[]\OT1/cmr/m/n/10.95 Acer As-pire
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3366--3366
+[]\OT1/cmr/m/n/10.95 Euronics
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3366--3366
+[]\OT1/cmr/m/n/10.95 Acer lap-top char-ac-ter-ized
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3366--3366
+\OT1/cmr/m/n/10.95 dual core pro-ces-sor(2,16
+ []
+
+
+Underfull \hbox (badness 4686) in paragraph at lines 3366--3366
+\OT1/cmr/m/n/10.95 HD; DVD reader; shared
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3366--3366
+\OT1/cmr/m/n/10.95 Eth-er-net Net-work in-ter-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3367--3367
+[]\OT1/cmr/m/n/10.95 RFID
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3367--3367
+[]\OT1/cmr/m/n/10.95 Arygon, ISO
+ []
+
+
+Underfull \hbox (badness 1603) in paragraph at lines 3367--3367
+\OT1/cmr/m/n/10.95 14443-NFC com-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3367--3367
+\OT1/cmr/m/n/10.95 pli-ant, USB
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3367--3367
+[]\OT1/cmr/m/n/10.95 IDTronic
+ []
+
+
+Underfull \hbox (badness 2057) in paragraph at lines 3367--3367
+[]\OT1/cmr/m/n/10.95 USB RFID desk-top reader
+ []
+
+
+Overfull \hbox (3.09445pt too wide) in paragraph at lines 3363--3369
+ [][] 
+ []
+
+[156 <images/map1.jpg>]
+Overfull \hbox (1.38474pt too wide) in paragraph at lines 3384--3385
+[]\OT1/cmr/m/n/10.95 Only af-ter the con-fir-ma-tion, Our bar pay-ment mod-ule 
+in-ter-venes gath-er-ing(receiving)
+ []
+
+[157] [158] [159]
+Overfull \hbox (10.0992pt too wide) in paragraph at lines 3457--3457
+[]\OT1/cmr/bx/n/10.95 Q.ty| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3457--3457
+[]\OT1/cmr/bx/n/10.95 Device
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3458--3458
+[]\OT1/cmr/m/n/10.95 Desktop
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3458--3458
+[]\OT1/cmr/m/n/10.95 Informatica
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3458--3458
+\OT1/cmr/m/n/10.95 Com-mer-
+ []
+
+
+Underfull \hbox (badness 4846) in paragraph at lines 3458--3458
+\OT1/cmr/m/n/10.95 pro-ces-sor(2,66 GHz/1M); 3 GB
+ []
+
+
+Underfull \hbox (badness 3954) in paragraph at lines 3458--3458
+\OT1/cmr/m/n/10.95 reader; shared mem-ory graphic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3459--3459
+[]\OT1/cmr/m/n/10.95 RFID
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3459--3459
+[]\OT1/cmr/m/n/10.95 Arygon, ISO
+ []
+
+
+Underfull \hbox (badness 1603) in paragraph at lines 3459--3459
+\OT1/cmr/m/n/10.95 14443-NFC com-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3459--3459
+\OT1/cmr/m/n/10.95 pli-ant, USB
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3459--3459
+[]\OT1/cmr/m/n/10.95 IDTronic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3460--3460
+[]\OT1/cmr/m/n/10.95 Receipt
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3460--3460
+[]\OT1/cmr/m/n/10.95 Custom KUBE
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3460--3460
+\OT1/cmr/m/n/10.95 ETH, 80mm
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3460--3460
+[]\OT1/cmr/m/n/10.95 Custom
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3461--3461
+[]\OT1/cmr/m/n/10.95 Uninter-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3461--3461
+\OT1/cmr/m/n/10.95 raptible
+ []
+
+
+Underfull \hbox (badness 1348) in paragraph at lines 3461--3461
+\OT1/cmr/m/n/10.95 Power Sys-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3461--3461
+[]\OT1/cmr/m/n/10.95 APC, Schnei-der
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3461--3461
+[]\OT1/cmr/m/n/10.95 Informatica
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3461--3461
+\OT1/cmr/m/n/10.95 Com-mer-
+ []
+
+
+Underfull \hbox (badness 1097) in paragraph at lines 3461--3461
+[]\OT1/cmr/m/n/10.95 UPS use-ful to guar-an-tee elec-tric
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3462--3462
+[]\OT1/cmr/m/n/10.95 Laptop
+ []
+
+
+Underfull \hbox (badness 5288) in paragraph at lines 3462--3462
+[]\OT1/cmr/m/n/10.95 Tucano portable
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3462--3462
+[]\OT1/cmr/m/n/10.95 Tucano
+ []
+
+
+Underfull \hbox (badness 1460) in paragraph at lines 3462--3462
+[]\OT1/cmr/m/n/10.95 Laptop key-pad used to let cus-
+ []
+
+
+Underfull \hbox (badness 2717) in paragraph at lines 3462--3462
+\OT1/cmr/m/n/10.95 tomer's in-sert PIN to com-plete
+ []
+
+
+Overfull \hbox (17.32082pt too wide) in paragraph at lines 3455--3464
+ [][] 
+ []
+
+[160] [161] [162]
+Underfull \hbox (badness 10000) in paragraph at lines 3494--3494
+[]\OT1/cmr/bx/n/10.95 Device
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3495--3495
+[]\OT1/cmr/m/n/10.95 Turnstile
+ []
+
+
+Underfull \hbox (badness 1436) in paragraph at lines 3495--3495
+\OT1/cmr/m/n/10.95 with RFID
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3495--3495
+\OT1/cmr/m/n/10.95 reader
+ []
+
+
+Underfull \hbox (badness 2538) in paragraph at lines 3495--3495
+[]\OT1/cmr/m/n/10.95 MASTER INOX
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3495--3495
+[]\OT1/cmr/m/n/10.95 Codarini
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3496--3496
+[]\OT1/cmr/m/n/10.95 AXESS NEO-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3496--3496
+\OT1/cmr/m/n/10.95 with RS232
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3496--3496
+[]\OT1/cmr/m/n/10.95 Codarini
+ []
+
+
+Underfull \hbox (badness 1303) in paragraph at lines 3496--3496
+[]\OT1/cmr/m/n/10.95 Controller Card to man-age
+ []
+
+
+Underfull \hbox (badness 2512) in paragraph at lines 3496--3496
+\OT1/cmr/m/n/10.95 RFID reader and turn-stile
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3497--3497
+[]\OT1/cmr/m/n/10.95 RFID
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3497--3497
+[]\OT1/cmr/m/n/10.95 AXESS RFID
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3497--3497
+\OT1/cmr/m/n/10.95 ISO14443
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3497--3497
+[]\OT1/cmr/m/n/10.95 Codarini
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3498--3498
+[]\OT1/cmr/m/n/10.95 Ethernet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3498--3498
+\OT1/cmr/m/n/10.95 net-work
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3498--3498
+[]\OT1/cmr/m/n/10.95 Codarini
+ []
+
+
+Underfull \hbox (badness 5592) in paragraph at lines 3498--3498
+[]\OT1/cmr/m/n/10.95 Ethernet net-work in-ter-face
+ []
+
+
+Underfull \hbox (badness 2698) in paragraph at lines 3498--3498
+\OT1/cmr/m/n/10.95 card to con-vert RS232 to
+ []
+
+
+Underfull \hbox (badness 6252) in paragraph at lines 3498--3498
+\OT1/cmr/m/n/10.95 Eth-er-net data flow. It
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3498--3498
+\OT1/cmr/m/n/10.95 packs/unpacks NEO-MAX
+ []
+
+
+Underfull \hbox (badness 2221) in paragraph at lines 3498--3498
+\OT1/cmr/m/n/10.95 RS232 mes-sages into UDP
+ []
+
+
+Underfull \hbox (badness 1990) in paragraph at lines 3498--3498
+\OT1/cmr/m/n/10.95 mes-sages to al-low soft-ware
+ []
+
+
+Underfull \hbox (badness 7667) in paragraph at lines 3498--3498
+\OT1/cmr/m/n/10.95 mod-ules con-nected to an
+ []
+
+
+Overfull \hbox (3.09445pt too wide) in paragraph at lines 3492--3500
+ [][] 
+ []
+
+[163]
+Underfull \hbox (badness 10000) in paragraph at lines 3522--3522
+[]\OT1/cmr/m/n/10.95 One client ma-chine goes
+ []
+
+
+Underfull \hbox (badness 1286) in paragraph at lines 3522--3522
+\OT1/cmr/m/n/10.95 down, other users are still
+ []
+
+
+Underfull \hbox (badness 5008) in paragraph at lines 3523--3523
+\OT1/cmr/m/n/10.95 fer and con-nec-tions made
+ []
+
+
+Underfull \hbox (badness 1629) in paragraph at lines 3523--3523
+\OT1/cmr/m/n/10.95 to the server from var-i-ous
+ []
+
+
+Underfull \hbox (badness 2521) in paragraph at lines 3526--3526
+\OT1/cmr/m/n/10.95 in-stall re-quired ver-sions of
+ []
+
+
+Underfull \hbox (badness 1648) in paragraph at lines 3526--3526
+[]\OT1/cmr/m/n/10.95 Only server needs to have
+ []
+
+
+Overfull \hbox (36.0pt too wide) in paragraph at lines 3516--3528
+ [][] 
+ []
+
+[164] [165] <images/kiosk_mainform.jpg, id=610, 1284.8pt x 756.8275pt>
+File: images/kiosk_mainform.jpg Graphic file (type jpg)
+
+<use images/kiosk_mainform.jpg> [166 <images/kiosk_mainform.jpg>] [167]
+Underfull \hbox (badness 10000) in paragraph at lines 3615--3615
+[]\OT1/cmr/bx/n/10.95 Device cat-e-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3616--3616
+[]\OT1/cmr/m/n/10.95 Informatica
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3616--3616
+\OT1/cmr/m/n/10.95 Com-mer-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3616--3616
+[]\OT1/cmr/m/n/10.95 Desktop PC char-ac-ter-ized
+ []
+
+
+Underfull \hbox (badness 5563) in paragraph at lines 3616--3616
+\OT1/cmr/m/n/10.95 by the E7400 In-tel Pen-
+ []
+
+
+Underfull \hbox (badness 1430) in paragraph at lines 3616--3616
+\OT1/cmr/m/n/10.95 250 GB HD; DVD reader;
+ []
+
+
+Underfull \hbox (badness 2512) in paragraph at lines 3616--3616
+\OT1/cmr/m/n/10.95 1Gb Eth-er-net Net-work in-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3617--3617
+[]\OT1/cmr/m/n/10.95 Informatica
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3617--3617
+\OT1/cmr/m/n/10.95 com-mer-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3618--3618
+[]\OT1/cmr/m/n/10.95 Arygon, ISO
+ []
+
+
+Underfull \hbox (badness 1603) in paragraph at lines 3618--3618
+\OT1/cmr/m/n/10.95 14443-NFC com-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3618--3618
+\OT1/cmr/m/n/10.95 pli-ant , USB
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3618--3618
+[]\OT1/cmr/m/n/10.95 IDTronic
+ []
+
+
+Underfull \hbox (badness 2057) in paragraph at lines 3618--3618
+[]\OT1/cmr/m/n/10.95 USB RFID desk-top reader
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3619--3619
+[]\OT1/cmr/m/n/10.95 Custom
+ []
+
+
+Underfull \hbox (badness 4726) in paragraph at lines 3619--3619
+\OT1/cmr/m/n/10.95 lated to cus-tomers' credit
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3620--3620
+[]\OT1/cmr/m/n/10.95 VTI Ma-trix
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3620--3620
+\OT1/cmr/m/n/10.95 RS232 cash
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3620--3620
+[]\OT1/cmr/m/n/10.95 Custom
+ []
+
+
+Underfull \hbox (badness 4120) in paragraph at lines 3620--3620
+[]\OT1/cmr/m/n/10.95 Cash ac-cep-tor de-vice use-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3621--3621
+[]\OT1/cmr/m/n/10.95 Uninterraptible
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3621--3621
+\OT1/cmr/m/n/10.95 Power Sys-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3621--3621
+[]\OT1/cmr/m/n/10.95 APC, Schnei-der
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3621--3621
+[]\OT1/cmr/m/n/10.95 Informatica
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3621--3621
+\OT1/cmr/m/n/10.95 Com-mer-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3622--3622
+[]\OT1/cmr/m/n/10.95 TATSUYAMA
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3622--3622
+\OT1/cmr/m/n/10.95 wa-ter-proof key-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3622--3622
+[]\OT1/cmr/m/n/10.95 Informatica
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3622--3622
+\OT1/cmr/m/n/10.95 Com-mer-
+ []
+
+
+Overfull \hbox (31.54721pt too wide) in paragraph at lines 3613--3624
+ [][] 
+ []
+
+
+Underfull \hbox (badness 3209) in paragraph at lines 3635--3635
+\OT1/cmr/m/n/10.95 The LAN ca-ble con-nected
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 3636--3636
+[]\OT1/cmr/m/n/10.95 Covering the en-tire struc-
+ []
+
+[168] [169] [170] [171
+
+]
+Chapter 7.
+
+<C:/Users/kaab/Desktop/TESI/Finale/images/barAnalysis.jpg, id=630, 481.04718pt 
+x 319.1925pt>
+File: C:/Users/kaab/Desktop/TESI/Finale/images/barAnalysis.jpg Graphic file (ty
+pe jpg)
+ <use C:/Users/kaab/Desktop/TESI/Finale/images/barAnalysis.jpg>
+<C:/Users/kaab/Desktop/TESI/Finale/images/Untitled-1.jpg, id=631, 450.68375pt x
+ 316.18124pt>
+File: C:/Users/kaab/Desktop/TESI/Finale/images/Untitled-1.jpg Graphic file (typ
+e jpg)
+ <use C:/Users/kaab/Desktop/TESI/Finale/images/Untitled-1.jpg>
+[172
+
+] [173 <C:/Users/kaab/Desktop/TESI/Finale/images/barAnalysis.jpg>]
+<C:/Users/kaab/Desktop/TESI/Finale/images/recharge_analysis.jpg, id=638, 671.50
+874pt x 489.83pt>
+File: C:/Users/kaab/Desktop/TESI/Finale/images/recharge_analysis.jpg Graphic fi
+le (type jpg)
+
+<use C:/Users/kaab/Desktop/TESI/Finale/images/recharge_analysis.jpg> [174 <C:/U
+sers/kaab/Desktop/TESI/Finale/images/Untitled-1.jpg>] [175 <C:/Users/kaab/Deskt
+op/TESI/Finale/images/recharge_analysis.jpg>]
+<C:/Users/kaab/Desktop/TESI/Finale/images/learning_curve.jpg, id=645, 717.68124
+pt x 499.8675pt>
+File: C:/Users/kaab/Desktop/TESI/Finale/images/learning_curve.jpg Graphic file 
+(type jpg)
+
+<use C:/Users/kaab/Desktop/TESI/Finale/images/learning_curve.jpg>
+Underfull \vbox (badness 1270) has occurred while \output is active []
+
+ [176 <C:/Users/kaab/Desktop/TESI/Finale/images/learning_curve.jpg>]
+<C:/Users/kaab/Desktop/TESI/Finale/images/check_in_analysis.jpg, id=650, 588.19
+75pt x 354.32375pt>
+File: C:/Users/kaab/Desktop/TESI/Finale/images/check_in_analysis.jpg Graphic fi
+le (type jpg)
+
+<use C:/Users/kaab/Desktop/TESI/Finale/images/check_in_analysis.jpg> [177 <C:/U
+sers/kaab/Desktop/TESI/Finale/images/check_in_analysis.jpg>]
+<C:/Users/kaab/Desktop/TESI/Finale/images/lost_tag_trend.jpg, id=654, 588.1975p
+t x 347.2975pt>
+File: C:/Users/kaab/Desktop/TESI/Finale/images/lost_tag_trend.jpg Graphic file 
+(type jpg)
+
+<use C:/Users/kaab/Desktop/TESI/Finale/images/lost_tag_trend.jpg> [178]
+<C:/Users/kaab/Desktop/TESI/Finale/images/tag_loss_ratio.jpg, id=658, 586.19pt 
+x 343.2825pt>
+File: C:/Users/kaab/Desktop/TESI/Finale/images/tag_loss_ratio.jpg Graphic file 
+(type jpg)
+
+<use C:/Users/kaab/Desktop/TESI/Finale/images/tag_loss_ratio.jpg>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [179 <C:/Users/kaab/Desktop/TESI/Finale/images/lost_tag_trend.jpg>] [180 <C:/U
+sers/kaab/Desktop/TESI/Finale/images/tag_loss_ratio.jpg>] [181]
+Chapter 8.
+[182
+
+]
+<C:/Users/kaab/Desktop/TESI/Finale/images/repubblica.jpg, id=672, 698.61pt x 51
+3.92pt>
+File: C:/Users/kaab/Desktop/TESI/Finale/images/repubblica.jpg Graphic file (typ
+e jpg)
+ <use C:/Users/kaab/Desktop/TESI/Finale/images/repubblica.jpg> [183 <C:/Users/k
+aab/Desktop/TESI/Finale/images/repubblica.jpg>] [184] [185] [186]
+[187] [188] [189]
+Appendice A.
+[190
+
+] [191] [192] [193] [194] [195] [196] [197] [198]
+Underfull \vbox (badness 1490) has occurred while \output is active []
+
+ [199]
+[200]
+<30_pages_images/problemi_e_opportunita.jpg, id=730, 499.8675pt x 384.6872pt>
+File: 30_pages_images/problemi_e_opportunita.jpg Graphic file (type jpg)
+
+<use 30_pages_images/problemi_e_opportunita.jpg>
+<30_pages_images/obiettivi_di_progetto.jpg, id=731, 224.33812pt x 113.67468pt>
+File: 30_pages_images/obiettivi_di_progetto.jpg Graphic file (type jpg)
+
+<use 30_pages_images/obiettivi_di_progetto.jpg> [201] [202 <30_pages_images/pro
+blemi_e_opportunita.jpg> <30_pages_images/obiettivi_di_progetto.jpg>]
+<30_pages_images/risultati_vs_obiettivi.jpg, id=738, 420.82219pt x 460.72125pt>
+File: 30_pages_images/risultati_vs_obiettivi.jpg Graphic file (type jpg)
+<use 30_pages_images/risultati_vs_obiettivi.jpg> [203 <30_pages_images/risultat
+i_vs_obiettivi.jpg>] [204] [205] [206]
+<30_pages_images/repository.jpg, id=752, 660.4675pt x 465.74pt>
+File: 30_pages_images/repository.jpg Graphic file (type jpg)
+
+<use 30_pages_images/repository.jpg> [207 <30_pages_images/repository.jpg>]
+[208] [209] [210] [211] [212] [213] [214] [215] [216] [217] [218]
+Overfull \hbox (21.61044pt too wide) in paragraph at lines 4432--4433
+[]\OT1/cmr/m/n/10.95 Charles Wal-ton - The fa-ther of RFID - http://radio.weblo
+gs.com/0105910/2004/06/14.html 
+ []
+
+
+Overfull \hbox (34.53642pt too wide) in paragraph at lines 4433--4434
+[]\OT1/cmr/m/n/10.95 A Small Piece of RFID His-tory - http://www.rfidjournal.co
+m/article/articleview/3315/1/366/ 
+ []
+
+[219
+
+] (tesi_definitiva.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 2051 strings out of 95282
+ 32928 string characters out of 1182670
+ 87899 words of memory out of 1500000
+ 5200 multiletter control sequences out of 110000
+ 11955 words of font info for 42 fonts, out of 3000000 for 5000
+ 14 hyphenation exceptions out of 8191
+ 39i,10n,26p,2279b,444s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.7/fonts/type1/bluesky/cm/cmbx10.pfb><C:/Program Fi
+les/MiKTeX 2.7/fonts/type1/bluesky/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.7/f
+onts/type1/bluesky/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.7/fonts/type1/blue
+sky/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.7/fonts/type1/bluesky/cm/cmr12.pfb>
+<C:/Program Files/MiKTeX 2.7/fonts/type1/bluesky/cm/cmr17.pfb><C:/Program Files
+/MiKTeX 2.7/fonts/type1/bluesky/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.7/fonts/
+type1/bluesky/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.7/fonts/type1/bluesky/cm/c
+mr9.pfb><C:/Program Files/MiKTeX 2.7/fonts/type1/bluesky/cm/cmsl9.pfb><C:/Progr
+am Files/MiKTeX 2.7/fonts/type1/bluesky/cm/cmsy10.pfb><C:/Program Files/MiKTeX 
+2.7/fonts/type1/bluesky/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.7/fonts/type1/b
+luesky/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.7/fonts/type1/bluesky/cm/cmtt10
+.pfb>
+Output written on tesi_definitiva.pdf (224 pages, 8332986 bytes).
+PDF statistics:
+ 847 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 131072)
+ 321 words of extra memory for PDF output out of 10000 (max. 10000000)
+
